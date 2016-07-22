@@ -1,0 +1,32 @@
+@import "vars";
+
+.header {
+  background: $color-second;
+  color: #ffffff;
+}
+
+.logo {
+  color: #ffffff;
+  line-height: 48px;
+  text-decoration: none;
+}
+
+.logo--img {
+  vertical-align: middle;
+}
+
+.logo--text {
+  line-height: 48px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo--divider {
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 100;
+  color: $color-main;
+  margin: 0 10px;
+  font-size: 12px;
+}
