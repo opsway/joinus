@@ -32,7 +32,7 @@
   display: inline-block;
   vertical-align: middle;
   font-weight: 100;
-  color: $color-main;
+  color: $color-main-light;
   margin: 0 5px;
 }
 
@@ -53,7 +53,7 @@
   padding-right: 10px;
   margin-right: 10px;
   &.active {
-    border-bottom: 4px solid $color-main;
+    border-bottom: 4px solid $color-main-light;
   }
 }
 

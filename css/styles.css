@@ -51,11 +51,13 @@
 
 .button, .button-main {
   border-radius: 25px;
-  padding: 15px 30px;
+  padding: 0px 30px;
   display: inline-block;
   text-transform: uppercase;
   font-weight: 100;
-  color: #ffffff; }
+  color: #ffffff;
+  height: 40px;
+  line-height: 40px; }
   .button:hover, .button-main:hover {
     text-decoration: none;
     color: #ffffff; }
@@ -66,7 +68,25 @@
 .mt-15 {
   margin-top: 15px; }
 
+.color-main {
+  color: #22b14d; }
+
 body {
   font-family: 'Open Sans', sans-serif; }
+
+.main {
+  height: calc(100vh - 75px);
+  background-color: #2d3743;
+  background-image: url("../img/main-bg.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-x: center;
+  background-position-y: 70%; }
+
+.main--heading {
+  font-size: 36px;
+  font-weight: 100;
+  color: #ffffff;
+  margin-top: 65px; }
 
 /*# sourceMappingURL=styles.css.map */
