@@ -13,9 +13,10 @@ body {
   background-color: #2d3743;
   background-image: url("../img/main-bg.png");
   background-repeat: no-repeat;
-  background-size: 20%;
-  background-position-x: center;
-  background-position-y: 70%;
+  background-size: 25%;
+  background-position-x: calc(50% + 10px);
+  background-position-y: 72%;
+  position: relative;
 }
 
 .main--heading {
@@ -24,3 +25,79 @@ body {
   color: #ffffff;
   margin-top: 65px;
 }
+
+.main-textbox {
+  background: linear-gradient(to top, #dbe9e9, #ffffff);
+  color: #274953;
+  border-radius: 10px;
+  position: absolute;
+  padding: 10px 20px;
+}
+
+.main-textbox--arrow {
+  background: #53aac4;
+  width: 50px;
+  position: absolute;
+  height: 1px;
+}
+
+.main-textbox.one {
+  left: 60%;
+  top: 25%;
+  .main-textbox--arrow {
+    top: 100%;
+    right: 100%;
+    transform: rotate(-45deg);
+    margin-top: 20px;
+    margin-right: -5px;
+  }
+}
+
+.main-textbox.two {
+  top: 55%;
+  left: 66%;
+  .main-textbox--arrow {
+    bottom: 100%;
+    right: 100%;
+    transform: rotate(45deg);
+    margin-bottom: 20px;
+    margin-right: -5px;
+  }
+}
+
+.main-textbox.three {
+  top: 60%;
+  left: 62%;
+  .main-textbox--arrow {
+    bottom: 100%;
+    right: 100%;
+    transform: rotate(45deg);
+    margin-bottom: 20px;
+    margin-right: -5px;
+  }
+}
+
+.main-textbox.four {
+  top: 55%;
+  left: 10%;
+  .main-textbox--arrow {
+    bottom: 100%;
+    right: 100%;
+    transform: rotate(45deg);
+    margin-bottom: 20px;
+    margin-right: -5px;
+  }
+}
+
+.main-textbox.five {
+  top: 20%;
+  left: 15%;
+  .main-textbox--arrow {
+    bottom: 100%;
+    right: 100%;
+    transform: rotate(45deg);
+    margin-bottom: 20px;
+    margin-right: -5px;
+  }
+}
+
