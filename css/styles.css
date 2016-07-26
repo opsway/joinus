@@ -6,6 +6,7 @@
 .logo {
   color: #ffffff;
   line-height: 75px;
+  height: 75px;
   text-decoration: none;
   display: inline-block; }
 
@@ -28,13 +29,15 @@
   margin: 0 5px; }
 
 .header-nav {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 .header-nav--item {
   list-style-type: none;
   display: inline-block;
   text-transform: uppercase;
   line-height: 75px;
+  height: 75px;
   font-size: 12px;
   padding-right: 10px;
   margin-right: 10px; }
@@ -51,11 +54,17 @@
   padding: 15px 30px;
   display: inline-block;
   text-transform: uppercase;
-  font-weight: 100; }
+  font-weight: 100;
+  color: #ffffff; }
+  .button:hover, .button-main:hover {
+    text-decoration: none;
+    color: #ffffff; }
 
 .button-main {
-  color: #ffffff;
   background: #22b14d; }
+
+.mt-15 {
+  margin-top: 15px; }
 
 body {
   font-family: 'Open Sans', sans-serif; }
