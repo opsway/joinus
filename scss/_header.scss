@@ -5,6 +5,8 @@
   color: #ffffff;
 }
 
+// logo
+
 .logo {
   color: #ffffff;
   line-height: 48px;
@@ -29,4 +31,16 @@
   font-weight: 100;
   color: $color-main;
   margin: 0 10px;
+}
+
+// navigation
+
+.header-nav {
+
+}
+
+.header-nav--item {
+  list-style-type: none;
+  display: inline;
+  text-transform: uppercase;
 }
