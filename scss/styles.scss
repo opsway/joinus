@@ -41,6 +41,8 @@ body {
   height: 1px;
 }
 
+// todo: mixin and responsive positioning
+
 .main-textbox.one {
   left: 60%;
   top: 25%;
@@ -66,7 +68,7 @@ body {
 }
 
 .main-textbox.three {
-  top: 60%;
+  top: 70%;
   left: 62%;
   .main-textbox--arrow {
     bottom: 100%;
@@ -79,25 +81,25 @@ body {
 
 .main-textbox.four {
   top: 55%;
-  left: 10%;
+  left: 22%;
   .main-textbox--arrow {
-    bottom: 100%;
-    right: 100%;
+    top: 100%;
+    left: 100%;
     transform: rotate(45deg);
-    margin-bottom: 20px;
-    margin-right: -5px;
+    margin-top: 20px;
+    margin-left: -5px;
   }
 }
 
 .main-textbox.five {
   top: 20%;
-  left: 15%;
+  left: 25%;
   .main-textbox--arrow {
-    bottom: 100%;
-    right: 100%;
+    top: 100%;
+    left: 100%;
     transform: rotate(45deg);
-    margin-bottom: 20px;
-    margin-right: -5px;
+    margin-top: 20px;
+    margin-left: -5px;
   }
 }
 
