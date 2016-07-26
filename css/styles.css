@@ -13,7 +13,8 @@
 .logo--text {
   line-height: 48px;
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-size: 12px; }
 
 .logo--divider {
   font-size: 30px;
@@ -21,7 +22,6 @@
   vertical-align: middle;
   font-weight: 100;
   color: #65b57d;
-  margin: 0 10px;
-  font-size: 12px; }
+  margin: 0 10px; }
 
 /*# sourceMappingURL=styles.css.map */
