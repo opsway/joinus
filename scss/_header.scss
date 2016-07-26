@@ -9,8 +9,9 @@
 
 .logo {
   color: #ffffff;
-  line-height: 48px;
+  line-height: 75px;
   text-decoration: none;
+  display: inline-block;
 }
 
 .logo--img {
@@ -18,29 +19,44 @@
 }
 
 .logo--text {
-  line-height: 48px;
   display: inline-block;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 10px;
+  margin-bottom: -5px;
+  color: #b6b8c4;
 }
 
 .logo--divider {
-  font-size: 30px;
+  font-size: 21px;
   display: inline-block;
   vertical-align: middle;
   font-weight: 100;
   color: $color-main;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 // navigation
 
 .header-nav {
-
+  margin: 0;
 }
 
 .header-nav--item {
   list-style-type: none;
-  display: inline;
+  display: inline-block;
   text-transform: uppercase;
+  line-height: 75px;
+  font-size: 12px;
+  padding-right: 10px;
+  margin-right: 10px;
+  &.active {
+    border-bottom: 4px solid $color-main;
+  }
+}
+
+.header-nav--item-link {
+  color: #b6b8c4;
+  &:hover {
+    text-decoration: none;
+  }
 }
