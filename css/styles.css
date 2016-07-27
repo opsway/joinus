@@ -112,6 +112,9 @@ body {
     transform: rotate(-45deg);
     margin-top: 20px;
     margin-right: -5px; }
+  @media (max-width: 1440px) {
+    .main-textbox.one {
+      top: 20%; } }
 
 .main-textbox.two {
   top: 55%;
@@ -142,6 +145,9 @@ body {
     transform: rotate(45deg);
     margin-top: 20px;
     margin-left: -5px; }
+  @media (max-width: 1440px) {
+    .main-textbox.four {
+      left: 20%; } }
 
 .main-textbox.five {
   top: 20%;
@@ -152,5 +158,8 @@ body {
     transform: rotate(45deg);
     margin-top: 20px;
     margin-left: -5px; }
+  @media (max-width: 1440px) {
+    .main-textbox.five {
+      left: 17%; } }
 
 /*# sourceMappingURL=styles.css.map */
