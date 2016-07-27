@@ -112,3 +112,23 @@ body {
   }
 }
 
+.main--anchor {
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 40px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  &:before {
+    position: absolute;
+    width: 4px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 2px;
+    content: " ";
+    left: 6px;
+    top: 6px;
+  }
+}
+
