@@ -165,7 +165,8 @@ body {
 .main--anchor {
   position: absolute;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -25px;
+  bottom: 20px;
   width: 20px;
   height: 40px;
   border: 2px solid #ffffff;
