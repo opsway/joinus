@@ -1,4 +1,11 @@
+.slider {
+  .bx-wrapper .bx-viewport {
+    box-shadow: none;
+  }
+}
+
 .slider--img {
   width: 140px;
   border-radius: 50%;
+  display: inline-block !important; // override slider style
 }
