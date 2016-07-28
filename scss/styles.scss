@@ -23,3 +23,24 @@ body {
   color: #274953;
   font-weight: 100;
 }
+
+.heading--stripes {
+  position: relative;
+  &:before, &:after {
+    content: " ";
+    position: absolute;
+    background: #f3f4f4;
+    height: 10px;
+    width: 40%;
+    top: 50%;
+    margin-top: -5px;
+  }
+  &:before {
+    right: 100%;
+    margin-right: 20px;
+  }
+  &:after {
+    left: 100%;
+    margin-left: 20px;
+  }
+}
