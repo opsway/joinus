@@ -244,11 +244,18 @@
   background: #3b413d;
   color: #ffffff;
   background-image: url("../img/opsway-bg.png");
-  background-position: left;
-  background-repeat: no-repeat; }
+  background-position: top -59px left 65%;
+  background-repeat: no-repeat;
+  padding-top: 85px;
+  height: 100vh; }
+
+.opsway--list-heading {
+  font-size: 24px;
+  text-transform: uppercase; }
 
 .opsway--list {
-  margin: 0; }
+  margin: 30px 0;
+  font-size: 16px; }
 
 .opsway--list-item {
   list-style-type: none;
@@ -261,7 +268,8 @@
   background-position: center center;
   background-repeat: no-repeat;
   vertical-align: middle;
-  margin: 5px 0; }
+  margin: 5px 0;
+  margin-right: 15px; }
 
 .opsway--list-icon.service {
   background-image: url("../img/icon-service.png"); }
