@@ -88,6 +88,9 @@
   background-position-x: calc(50% + 10px);
   background-position-y: 72%;
   position: relative; }
+  @media (max-width: 1440px) {
+    .main {
+      background-size: 22%; } }
 
 .main--heading {
   color: #ffffff;
@@ -183,6 +186,9 @@
     content: " ";
     left: 6px;
     top: 6px; }
+  @media (max-width: 1440px) {
+    .main--anchor {
+      margin-left: -25px; } }
 
 .item {
   text-align: center;

@@ -7,6 +7,9 @@
   background-position-x: calc(50% + 10px);
   background-position-y: 72%;
   position: relative;
+  @media (max-width: 1440px) {
+    background-size: 22%;
+  }
 }
 
 .main--heading {
@@ -103,7 +106,7 @@
 .main--anchor {
   position: absolute;
   left: 50%;
-  margin-left: -34px; // todo: 1360-1440
+  margin-left: -34px; 
   bottom: 20px;
   width: 20px;
   height: 40px;
@@ -118,5 +121,8 @@
     content: " ";
     left: 6px;
     top: 6px;
+  }
+  @media (max-width: 1440px) {
+    margin-left: -25px;
   }
 }
