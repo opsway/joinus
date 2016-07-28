@@ -182,19 +182,6 @@
     left: 6px;
     top: 6px; }
 
-body {
-  font-family: 'Open Sans', sans-serif; }
-
-.heading {
-  font-size: 36px;
-  font-weight: 100;
-  text-align: center; }
-
-.heading--sign {
-  font-size: 18px;
-  color: #274953;
-  font-weight: 100; }
-
 .item {
   text-align: center;
   font-size: 20px;
@@ -252,5 +239,18 @@ body {
   font-size: 20px;
   color: #212121;
   margin: 170px 0 140px; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.heading {
+  font-size: 36px;
+  font-weight: 100;
+  text-align: center; }
+
+.heading--sign {
+  font-size: 18px;
+  color: #274953;
+  font-weight: 100; }
 
 /*# sourceMappingURL=styles.css.map */

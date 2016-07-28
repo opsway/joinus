@@ -1,0 +1,49 @@
+.item {
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+}
+
+.item--icon {
+  width: 144px;
+  height: 136px;
+  display: inline-block;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+$icons: admin, circles, experience, management, money, team;
+
+@each $icon in $icons {
+  .item--icon.#{$icon}{
+    background-image: url("../img/icon-#{$icon}.png");
+  }
+}
+
+.item_small {
+  text-align: center;
+  color: #898989;
+  font-size: 20px;
+}
+
+.item--icon_small {
+  @extend .item--icon;
+  width: 40px;
+  height: 40px;
+}
+
+$icons-small: bill, eiffel, luggage, sea;
+
+@each $icon in $icons-small {
+  .item--icon.#{$icon}{
+    background-image: url("../img/icon-#{$icon}.png");
+  }
+}
+
+.text-cloud {
+  text-align: center;
+  font-size: 20px;
+  color: #212121;
+  margin: 170px 0 140px;
+}
