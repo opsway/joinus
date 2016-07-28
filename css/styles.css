@@ -251,12 +251,32 @@
   margin: 0; }
 
 .opsway--list-item {
-  list-style-type: none; }
+  list-style-type: none;
+  line-height: 28px; }
 
 .opsway--list-icon {
   display: inline-block;
   width: 28px;
-  height: 28px; }
+  height: 28px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin: 5px 0; }
+
+.opsway--list-icon.service {
+  background-image: url("../img/icon-service.png"); }
+
+.opsway--list-icon.flexibility {
+  background-image: url("../img/icon-flexibility.png"); }
+
+.opsway--list-icon.commerce {
+  background-image: url("../img/icon-commerce.png"); }
+
+.opsway--list-icon.market {
+  background-image: url("../img/icon-market.png"); }
+
+.opsway--list-icon.distant {
+  background-image: url("../img/icon-distant.png"); }
 
 body {
   font-family: 'Open Sans', sans-serif; }
