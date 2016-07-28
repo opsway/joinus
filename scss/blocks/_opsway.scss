@@ -1,0 +1,28 @@
+.opsway {
+  background: #3b413d;
+  color: #ffffff;
+  background-image: url("../img/opsway-bg.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.opsway--list {
+  margin: 0;
+}
+
+.opsway--list-item {
+  list-style-type: none;
+
+}
+
+.opsway--list-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+
+$icons: service, flexibility, commerce, market, distant;
+
+@each $icon in $icons {
+
+}
