@@ -49,6 +49,9 @@
   .header-nav--item-link:hover {
     text-decoration: none; }
 
+.footer {
+  background: #2d333a; }
+
 .button-main {
   border-radius: 25px;
   padding: 0px 30px;
