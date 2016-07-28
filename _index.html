@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="bxslider/jquery.bxslider.min.js"></script>
+    <link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>Main</title>
@@ -229,6 +232,22 @@
                 That’s what people who joined us tell
             </span>
         </h2>
+        <ul class="bxslider">
+            <li>
+                <img class="slider--img" src="img/Pavel.jpg">
+                <p>Some people would say that M&A processes are always painful, unpredictable and unmanageable.
+                    I can partially agree - yes, they are pretty uncertain and require a lot of efforts
+                    from all parties. Our case wasn't an exclusion, during merge between OpsWay and
+                    Ephyros we also have faced some operational issues and had to react quickly and
+                    flexibly to solve them. </p>
+                <p>Looking back, I realise that it was right decision, the merge was great opportunity
+                    for our company –  we reached new level of doing business, discovered new market
+                    segments and built efficient operating system. It was a very exciting and useful
+                    experience, we've learnt a lot from our partners and have thought over our core processes.</p>
+                <p>Now we have shared vision of new Opsway as a open ecosystem which allows new teams to find
+                    their strengths and chose right strategy to scale business with us.</p>
+            </li>
+        </ul>
     </div>
 </div>
 <div class="feedback">
@@ -270,5 +289,10 @@
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function(){
+        $('.bxslider').bxSlider();
+    });
+</script>
 </body>
 </html>

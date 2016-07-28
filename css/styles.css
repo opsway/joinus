@@ -310,6 +310,10 @@
 .opsway--list-icon.distant {
   background-image: url("../img/icon-distant.png"); }
 
+.slider--img {
+  width: 140px;
+  border-radius: 50%; }
+
 .feedback {
   background: #2d3743;
   color: #ffffff;
