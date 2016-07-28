@@ -10,8 +10,30 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.item--text {
+.heading {
+
+}
+
+.item {
+  text-align: center;
   font-size: 20px;
   color: #000000;
+}
+
+.item--icon {
+  width: 144px;
+  height: 136px;
+  display: inline-block;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+$icons: admin, circles, experience, management, money, team;
+
+@each $icon in $icons {
+  .item--icon.#{$icon}{
+    background-image: url("../img/icon-#{$icon}.png");
+  }
 }
 

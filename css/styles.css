@@ -181,8 +181,35 @@
 body {
   font-family: 'Open Sans', sans-serif; }
 
-.item--text {
+.item {
+  text-align: center;
   font-size: 20px;
   color: #000000; }
+
+.item--icon {
+  width: 144px;
+  height: 136px;
+  display: inline-block;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px; }
+
+.item--icon.admin {
+  background-image: url("../img/icon-admin.png"); }
+
+.item--icon.circles {
+  background-image: url("../img/icon-circles.png"); }
+
+.item--icon.experience {
+  background-image: url("../img/icon-experience.png"); }
+
+.item--icon.management {
+  background-image: url("../img/icon-management.png"); }
+
+.item--icon.money {
+  background-image: url("../img/icon-money.png"); }
+
+.item--icon.team {
+  background-image: url("../img/icon-team.png"); }
 
 /*# sourceMappingURL=styles.css.map */
