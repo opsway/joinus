@@ -56,10 +56,16 @@
 
 .footer--link {
   color: #c9cacc; }
+  .footer--link:hover {
+    color: #c9cacc; }
 
-.footer--link {
+.footer--email {
   font-size: 16px;
+  color: #c9cacc;
   text-decoration: underline; }
+  .footer--email:hover {
+    color: #c9cacc;
+    text-decoration: none; }
 
 .button-main {
   border-radius: 25px;
