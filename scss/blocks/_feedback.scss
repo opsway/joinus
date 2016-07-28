@@ -2,6 +2,16 @@
   background: #2d3743;
   color: #ffffff;
   padding: 95px 0;
+  font-weight: 100;
+}
+
+.feedback--text {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.feedback--form {
+  margin-top: 55px;
 }
 
 .feedback--input {
@@ -11,10 +21,18 @@
   border: 1px solid #ffffff;
   color: #ffffff;
   width: 100%;
-  margin: 5px 0;
+  margin-bottom: 15px;
   padding: 0 10px;
+}
+
+.feedback--textarea {
+  @extend .feedback--input;
+  line-height: 1.5;
+  height: 265px;
+  padding: 10px;
 }
 
 .feedback--button {
   width: 250px;
+  margin-top: 55px;
 }
