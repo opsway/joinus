@@ -71,9 +71,6 @@
 .color-main {
   color: #22b14d; }
 
-body {
-  font-family: 'Open Sans', sans-serif; }
-
 .main {
   height: calc(100vh - 75px);
   background-color: #2d3743;
@@ -180,5 +177,8 @@ body {
     content: " ";
     left: 6px;
     top: 6px; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,124 @@
+.main {
+  height: calc(100vh - 75px);
+  background-color: #2d3743;
+  background-image: url("../img/main-bg.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position-x: calc(50% + 10px);
+  background-position-y: 72%;
+  position: relative;
+}
+
+.main--heading {
+  font-size: 36px;
+  font-weight: 100;
+  color: #ffffff;
+  margin-top: 65px;
+}
+
+.main-textbox {
+  background: linear-gradient(to top, #dbe9e9, #ffffff);
+  color: #274953;
+  border-radius: 10px;
+  position: absolute;
+  padding: 10px 20px;
+}
+
+.main-textbox--arrow {
+  background: #53aac4;
+  width: 50px;
+  position: absolute;
+  height: 1px;
+}
+
+// todo: mixin and responsive positioning
+
+.main-textbox.one {
+  left: 60%;
+  top: 25%;
+  .main-textbox--arrow {
+    top: 100%;
+    right: 100%;
+    transform: rotate(-45deg);
+    margin-top: 20px;
+    margin-right: -5px;
+  }
+  @media (max-width: 1440px) {
+    top: 20%;
+  }
+}
+
+.main-textbox.two {
+  top: 55%;
+  left: 66%;
+  .main-textbox--arrow {
+    bottom: 100%;
+    right: 100%;
+    transform: rotate(45deg);
+    margin-bottom: 20px;
+    margin-right: -5px;
+  }
+}
+
+.main-textbox.three {
+  top: 70%;
+  left: 62%;
+  .main-textbox--arrow {
+    bottom: 100%;
+    right: 100%;
+    transform: rotate(45deg);
+    margin-bottom: 20px;
+    margin-right: -5px;
+  }
+}
+
+.main-textbox.four {
+  top: 55%;
+  left: 22%;
+  .main-textbox--arrow {
+    top: 100%;
+    left: 100%;
+    transform: rotate(45deg);
+    margin-top: 20px;
+    margin-left: -5px;
+  }
+  @media (max-width: 1440px) {
+    left: 20%;
+  }
+}
+
+.main-textbox.five {
+  top: 20%;
+  left: 25%;
+  .main-textbox--arrow {
+    top: 100%;
+    left: 100%;
+    transform: rotate(45deg);
+    margin-top: 20px;
+    margin-left: -5px;
+  }
+  @media (max-width: 1440px) {
+    left: 17%;
+  }
+}
+
+.main--anchor {
+  position: absolute;
+  left: 50%;
+  margin-left: -25px; // todo: 1360
+  bottom: 20px;
+  width: 20px;
+  height: 40px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  &:before {
+    position: absolute;
+    width: 4px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 2px;
+    content: " ";
+    left: 6px;
+    top: 6px;
+  }
+}
