@@ -37,6 +37,14 @@
 
 // todo: mixin and responsive positioning
 
+$textboxes: one, two, three, four, five;
+
+@each $textbox in $textboxes {
+  .main-textbox.#{$textbox}{
+
+  }
+}
+
 .main-textbox.one {
   left: 60%;
   top: 25%;

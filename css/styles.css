@@ -50,7 +50,16 @@
     text-decoration: none; }
 
 .footer {
-  background: #2d333a; }
+  background: #2d333a;
+  color: #c9cacc;
+  padding: 30px 0 45px; }
+
+.footer--link {
+  color: #c9cacc; }
+
+.footer--link {
+  font-size: 16px;
+  text-decoration: underline; }
 
 .button-main {
   border-radius: 25px;
