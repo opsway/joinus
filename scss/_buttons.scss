@@ -1,6 +1,6 @@
 @import "vars";
 
-.button {
+.button-main {
   border-radius: 25px;
   padding: 0px 30px;
   display: inline-block;
@@ -9,13 +9,10 @@
   color: #ffffff;
   height: 40px;
   line-height: 40px;
-  &:hover {
+  background: $color-main;
+  border: none;
+  &:hover, &:focus {
     text-decoration: none;
     color: #ffffff;
   }
-}
-
-.button-main {
-  @extend .button;
-  background: $color-main;
 }

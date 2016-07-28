@@ -49,7 +49,7 @@
   .header-nav--item-link:hover {
     text-decoration: none; }
 
-.button, .button-main {
+.button-main {
   border-radius: 25px;
   padding: 0px 30px;
   display: inline-block;
@@ -57,13 +57,12 @@
   font-weight: 100;
   color: #ffffff;
   height: 40px;
-  line-height: 40px; }
-  .button:hover, .button-main:hover {
+  line-height: 40px;
+  background: #22b14d;
+  border: none; }
+  .button-main:hover, .button-main:focus {
     text-decoration: none;
     color: #ffffff; }
-
-.button-main {
-  background: #22b14d; }
 
 .mt-15 {
   margin-top: 15px; }
@@ -288,6 +287,11 @@
 
 .opsway--list-icon.distant {
   background-image: url("../img/icon-distant.png"); }
+
+.feedback {
+  background: #2d3743;
+  color: #ffffff;
+  padding: 95px 0; }
 
 body {
   font-family: 'Open Sans', sans-serif; }
