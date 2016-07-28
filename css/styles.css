@@ -162,7 +162,7 @@
 .main--anchor {
   position: absolute;
   left: 50%;
-  margin-left: -25px;
+  margin-left: -34px;
   bottom: 20px;
   width: 20px;
   height: 40px;
@@ -180,5 +180,9 @@
 
 body {
   font-family: 'Open Sans', sans-serif; }
+
+.item--text {
+  font-size: 20px;
+  color: #000000; }
 
 /*# sourceMappingURL=styles.css.map */
