@@ -324,6 +324,18 @@
   border-radius: 50%;
   display: inline-block !important; }
 
+.slider--text {
+  color: #212121;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 20px;
+  font-weight: 100; }
+
+.slider--sign {
+  text-align: right;
+  font-size: 24px;
+  color: #212121; }
+
 .feedback {
   background: #2d3743;
   color: #ffffff;
