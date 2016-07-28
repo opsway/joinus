@@ -293,6 +293,19 @@
   color: #ffffff;
   padding: 95px 0; }
 
+.feedback--input {
+  height: 55px;
+  line-height: 55px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  width: 100%;
+  margin: 5px 0;
+  padding: 0 10px; }
+
+.feedback--button {
+  width: 250px; }
+
 body {
   font-family: 'Open Sans', sans-serif; }
 
