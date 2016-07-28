@@ -37,3 +37,23 @@ $icons: admin, circles, experience, management, money, team;
   }
 }
 
+.item_small {
+  text-align: center;
+  color: #898989;
+  font-size: 20px;
+}
+
+.item--icon_small {
+  @extend .item--icon;
+  width: 40px;
+  height: 40px;
+}
+
+$icons-small: bill, eiffel, luggage, sea;
+
+@each $icon in $icons-small {
+  .item--icon.#{$icon}{
+    background-image: url("../img/icon-#{$icon}.png");
+  }
+}
+

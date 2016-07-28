@@ -186,7 +186,7 @@ body {
   font-size: 20px;
   color: #000000; }
 
-.item--icon {
+.item--icon, .item--icon_small {
   width: 144px;
   height: 136px;
   display: inline-block;
@@ -194,22 +194,43 @@ body {
   background-repeat: no-repeat;
   margin-bottom: 20px; }
 
-.item--icon.admin {
+.item--icon.admin, .admin.item--icon_small {
   background-image: url("../img/icon-admin.png"); }
 
-.item--icon.circles {
+.item--icon.circles, .circles.item--icon_small {
   background-image: url("../img/icon-circles.png"); }
 
-.item--icon.experience {
+.item--icon.experience, .experience.item--icon_small {
   background-image: url("../img/icon-experience.png"); }
 
-.item--icon.management {
+.item--icon.management, .management.item--icon_small {
   background-image: url("../img/icon-management.png"); }
 
-.item--icon.money {
+.item--icon.money, .money.item--icon_small {
   background-image: url("../img/icon-money.png"); }
 
-.item--icon.team {
+.item--icon.team, .team.item--icon_small {
   background-image: url("../img/icon-team.png"); }
+
+.item_small {
+  text-align: center;
+  color: #898989;
+  font-size: 20px; }
+
+.item--icon_small {
+  width: 40px;
+  height: 40px; }
+
+.item--icon.bill, .bill.item--icon_small {
+  background-image: url("../img/icon-bill.png"); }
+
+.item--icon.eiffel, .eiffel.item--icon_small {
+  background-image: url("../img/icon-eiffel.png"); }
+
+.item--icon.luggage, .luggage.item--icon_small {
+  background-image: url("../img/icon-luggage.png"); }
+
+.item--icon.sea, .sea.item--icon_small {
+  background-image: url("../img/icon-sea.png"); }
 
 /*# sourceMappingURL=styles.css.map */
