@@ -85,6 +85,9 @@
 .mt-15 {
   margin-top: 15px; }
 
+.mt-30 {
+  margin-top: 30px; }
+
 .mt-60 {
   margin-top: 60px; }
 
@@ -316,8 +319,10 @@
 .opsway--list-icon.distant {
   background-image: url("../img/icon-distant.png"); }
 
-.slider .bx-wrapper .bx-viewport {
-  box-shadow: none; }
+.slider {
+  margin: 95px 0; }
+  .slider .bx-wrapper .bx-viewport {
+    box-shadow: none; }
 
 .slider--img {
   width: 140px;
@@ -334,7 +339,8 @@
 .slider--sign {
   text-align: right;
   font-size: 24px;
-  color: #212121; }
+  color: #212121;
+  margin-top: 35px; }
 
 .feedback {
   background: #2d3743;
