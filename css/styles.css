@@ -95,6 +95,9 @@
 .main--heading {
   color: #ffffff;
   margin-top: 65px; }
+  @media (max-width: 1440px) {
+    .main--heading {
+      margin-top: 40px; } }
 
 .main-textbox {
   background: linear-gradient(to top, #dbe9e9, #ffffff);
@@ -188,7 +191,8 @@
     top: 6px; }
   @media (max-width: 1440px) {
     .main--anchor {
-      margin-left: -25px; } }
+      margin-left: -25px;
+      bottom: 12px; } }
 
 .item {
   text-align: center;

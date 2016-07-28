@@ -15,6 +15,9 @@
 .main--heading {
   color: #ffffff;
   margin-top: 65px;
+  @media (max-width: 1440px) {
+    margin-top: 40px;
+  }
 }
 
 .main-textbox {
@@ -124,5 +127,6 @@
   }
   @media (max-width: 1440px) {
     margin-left: -25px;
+    bottom: 12px;
   }
 }
