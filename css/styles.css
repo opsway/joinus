@@ -50,9 +50,14 @@
     .logo {
       line-height: 50px;
       height: 50px; } }
+  @media (max-width: 480px) {
+    .logo {
+      margin: 0 -10px;
+      margin-right: -70px; } }
 
 .logo--img {
-  vertical-align: middle; }
+  vertical-align: middle;
+  max-width: 100%; }
 
 .logo--text {
   display: inline-block;
@@ -72,6 +77,9 @@
 .header-nav {
   margin: 0;
   padding: 0; }
+  @media (max-width: 820px) {
+    .header-nav {
+      margin: 0 -15px; } }
 
 .header-nav--item {
   list-style-type: none;
@@ -89,11 +97,15 @@
       line-height: 50px;
       height: 50px;
       font-size: 11px; } }
+  @media (max-width: 820px) {
+    .header-nav--item {
+      font-size: 10px; } }
 
 .header-nav--item-link {
   color: #b6b8c4; }
   .header-nav--item-link:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #b6b8c4; }
 
 @media (max-width: 1200px) {
   .header--button {
@@ -104,6 +116,10 @@
     padding: 0 10px;
     height: 25px;
     line-height: 25px; } }
+@media (max-width: 480px) {
+  .header--button {
+    margin: 15px -10px;
+    font-size: 10px; } }
 
 .footer {
   background: #2d333a;
