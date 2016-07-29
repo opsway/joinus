@@ -32,6 +32,10 @@
 .color-main {
   color: #22b14d; }
 
+@media (max-width: 767px) {
+  .hidden--xs {
+    display: none; } }
+
 .header {
   background: #313341;
   color: #ffffff; }
@@ -83,7 +87,8 @@
   @media (max-width: 1024px) {
     .header-nav--item {
       line-height: 50px;
-      height: 50px; } }
+      height: 50px;
+      font-size: 11px; } }
 
 .header-nav--item-link {
   color: #b6b8c4; }

@@ -23,3 +23,9 @@
 .color-main {
   color: $color-main;
 }
+
+.hidden--xs {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
