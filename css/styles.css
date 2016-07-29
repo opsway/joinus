@@ -337,6 +337,15 @@
   margin: 95px 0; }
   .slider .bx-wrapper .bx-viewport {
     box-shadow: none; }
+  .slider .bx-wrapper .bx-controls-direction a {
+    width: 40px;
+    height: 41px; }
+  .slider .bx-prev {
+    background: url("../img/arrow-left.png");
+    left: -155px; }
+  .slider .bx-next {
+    background: url("../img/arrow-right.png");
+    right: -155px; }
 
 .slider--img {
   width: 140px;
@@ -348,7 +357,8 @@
   font-size: 18px;
   font-style: italic;
   margin-top: 20px;
-  font-weight: 100; }
+  font-weight: 100;
+  padding: 0 5px; }
 
 .slider--sign {
   text-align: right;

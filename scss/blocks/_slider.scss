@@ -3,6 +3,18 @@
   .bx-wrapper .bx-viewport {
     box-shadow: none;
   }
+  .bx-wrapper .bx-controls-direction a {
+    width: 40px;
+    height: 41px;
+  }
+  .bx-prev {
+    background: url("../img/arrow-left.png");
+    left: -155px;
+  }
+  .bx-next {
+    background: url("../img/arrow-right.png");
+    right: -155px;
+  }
 }
 
 .slider--img {
@@ -17,6 +29,7 @@
   font-style: italic;
   margin-top: 20px;
   font-weight: 100;
+  padding: 0 5px;
 
 }
 
