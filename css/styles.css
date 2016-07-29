@@ -67,6 +67,20 @@
     color: #c9cacc;
     text-decoration: none; }
 
+.footer--list {
+  margin: 0;
+  padding: 0; }
+
+.footer--list-item {
+  list-style-type: none;
+  display: inline; }
+
+.icon-circle {
+  color: #545454; }
+
+.icon-symbol {
+  color: #2d333a; }
+
 .button-main {
   border-radius: 25px;
   padding: 0px 30px;
