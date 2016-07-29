@@ -343,9 +343,13 @@
   .slider .bx-prev {
     background: url("../img/arrow-left.png");
     left: -155px; }
+    .slider .bx-prev:hover {
+      background-position: left top; }
   .slider .bx-next {
     background: url("../img/arrow-right.png");
     right: -155px; }
+    .slider .bx-next:hover {
+      background-position: left top; }
 
 .slider--img {
   width: 140px;

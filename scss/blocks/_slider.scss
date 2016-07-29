@@ -10,10 +10,16 @@
   .bx-prev {
     background: url("../img/arrow-left.png");
     left: -155px;
+    &:hover {
+      background-position: left top;
+    }
   }
   .bx-next {
     background: url("../img/arrow-right.png");
     right: -155px;
+    &:hover {
+      background-position: left top;
+    }
   }
 }
 
