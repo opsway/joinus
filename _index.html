@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="bxslider/jquery.bxslider.min.js"></script>
     <link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
@@ -82,6 +83,50 @@
         <span class="main-textbox--arrow"></span>
     </div>
     <a href="#items" class="main--anchor hidden--sm"></a>
+    <div class="main--slider">
+        <ul class=" bxslider2 show--xs">
+            <li>
+                <div class="main-textbox_mobile">
+                    We’ll share our clients
+                    <br>
+                    and find new ones
+                </div>
+            </li>
+            <li>
+                <div class="main-textbox_mobile">
+                    We’ll teach to work
+                    <br>
+                    remotely
+                    <span class="main-textbox--arrow"></span>
+                </div>
+            </li>
+            <li>
+                <div class="main-textbox_mobile">
+                    We’ll find specialists
+                    <br>
+                    for your team
+                    <span class="main-textbox--arrow"></span>
+                </div>
+            </li>
+            <li>
+                <div class="main-textbox_mobile">
+                    We’ll resolve financial
+                    <br>
+                    and administrative issues
+                    <span class="main-textbox--arrow"></span>
+                </div>
+            </li>
+            <li>
+                <div class="main-textbox_mobile">
+                    We’ll invest
+                    <br>
+                    up to $40 000 into your team
+                    <span class="main-textbox--arrow"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
 </div>
 <div id="items">
     <div class="container mb-80">
@@ -348,6 +393,9 @@
 <script>
     $(document).ready(function(){
         $('.bxslider').bxSlider({
+            pager: false
+        });
+        $('.bxslider2').bxSlider({
             pager: false
         });
     });

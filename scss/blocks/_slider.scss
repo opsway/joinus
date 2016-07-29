@@ -1,4 +1,4 @@
-.slider {
+.slider, .main--slider {
   margin: 95px 0;
   .bx-wrapper .bx-viewport {
     box-shadow: none;
@@ -20,6 +20,25 @@
     &:hover {
       background-position: left top;
     }
+  }
+}
+
+.main--slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 70px;
+  .bx-prev {
+    left: -60px;
+  }
+  .bx-next {
+    background: url("../img/arrow-right.png");
+    right: -60px;
+  }
+  .bx-wrapper .bx-viewport {
+    background: transparent;
+    border: none;
   }
 }
 

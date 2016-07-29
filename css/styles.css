@@ -73,6 +73,12 @@ body {
   .hidden--sm {
     display: none; } }
 
+.show--xs {
+  display: none; }
+  @media (max-width: 767px) {
+    .show--xs {
+      display: block; } }
+
 .header {
   background: #313341;
   color: #ffffff; }
@@ -215,6 +221,12 @@ body {
   @media (max-width: 1024px) {
     .main--image {
       margin-top: 39%; } }
+  @media (max-width: 767px) {
+    .main--image {
+      margin: -15px 0 0;
+      width: 210px;
+      height: 255px;
+      margin-right: -35px; } }
 
 .main--heading {
   color: #ffffff;
@@ -229,13 +241,24 @@ body {
   @media (max-width: 1024px) {
     .main--heading {
       font-size: 24px; } }
+  @media (max-width: 767px) {
+    .main--heading {
+      font-size: 20px;
+      padding: 0 15px; } }
 
-.main-textbox {
+.main-textbox, .main-textbox_mobile {
   background: linear-gradient(to top, #dbe9e9, #ffffff);
   color: #274953;
   border-radius: 10px;
   position: absolute;
   padding: 10px 20px; }
+
+.main-textbox_mobile {
+  position: static;
+  width: 195px;
+  height: 55px;
+  font-size: 13px;
+  text-align: center; }
 
 .main-textbox--arrow {
   background: #53aac4;
@@ -243,105 +266,105 @@ body {
   position: absolute;
   height: 1px; }
 
-.main-textbox.one {
+.main-textbox.one, .one.main-textbox_mobile {
   left: 60%;
   top: 25%; }
-  .main-textbox.one .main-textbox--arrow {
+  .main-textbox.one .main-textbox--arrow, .one.main-textbox_mobile .main-textbox--arrow {
     top: 100%;
     right: 100%;
     transform: rotate(-45deg);
     margin-top: 20px;
     margin-right: -5px; }
   @media (max-width: 1680px) {
-    .main-textbox.one {
+    .main-textbox.one, .one.main-textbox_mobile {
       top: 18%; } }
   @media (max-width: 1440px) {
-    .main-textbox.one {
+    .main-textbox.one, .one.main-textbox_mobile {
       top: 20%; } }
   @media (max-width: 1370px) {
-    .main-textbox.one {
+    .main-textbox.one, .one.main-textbox_mobile {
       top: 15%; } }
   @media (max-width: 1024px) {
-    .main-textbox.one {
+    .main-textbox.one, .one.main-textbox_mobile {
       top: 35%; } }
 
-.main-textbox.two {
+.main-textbox.two, .two.main-textbox_mobile {
   top: 55%;
   left: 66%; }
-  .main-textbox.two .main-textbox--arrow {
+  .main-textbox.two .main-textbox--arrow, .two.main-textbox_mobile .main-textbox--arrow {
     bottom: 100%;
     right: 100%;
     transform: rotate(45deg);
     margin-bottom: 20px;
     margin-right: -5px; }
   @media (max-width: 1680px) {
-    .main-textbox.two {
+    .main-textbox.two, .two.main-textbox_mobile {
       top: 50%;
       left: 69%; } }
   @media (max-width: 1370px) {
-    .main-textbox.two {
+    .main-textbox.two, .two.main-textbox_mobile {
       left: 65%; } }
   @media (max-width: 1024px) {
-    .main-textbox.two {
+    .main-textbox.two, .two.main-textbox_mobile {
       top: 86%;
       left: 69%; } }
 
-.main-textbox.three {
+.main-textbox.three, .three.main-textbox_mobile {
   top: 70%;
   left: 62%; }
-  .main-textbox.three .main-textbox--arrow {
+  .main-textbox.three .main-textbox--arrow, .three.main-textbox_mobile .main-textbox--arrow {
     bottom: 100%;
     right: 100%;
     transform: rotate(45deg);
     margin-bottom: 20px;
     margin-right: -5px; }
   @media (max-width: 1680px) {
-    .main-textbox.three {
+    .main-textbox.three, .three.main-textbox_mobile {
       top: 63%; } }
   @media (max-width: 1370px) {
-    .main-textbox.three {
+    .main-textbox.three, .three.main-textbox_mobile {
       top: 67%; } }
   @media (max-width: 1024px) {
-    .main-textbox.three {
+    .main-textbox.three, .three.main-textbox_mobile {
       top: 103%; } }
 
-.main-textbox.four {
+.main-textbox.four, .four.main-textbox_mobile {
   top: 55%;
   left: 22%; }
-  .main-textbox.four .main-textbox--arrow {
+  .main-textbox.four .main-textbox--arrow, .four.main-textbox_mobile .main-textbox--arrow {
     top: 100%;
     left: 100%;
     transform: rotate(45deg);
     margin-top: 20px;
     margin-left: -5px; }
   @media (max-width: 1680px) {
-    .main-textbox.four {
+    .main-textbox.four, .four.main-textbox_mobile {
       left: 20%; } }
   @media (max-width: 1440px) {
-    .main-textbox.four {
+    .main-textbox.four, .four.main-textbox_mobile {
       left: 19%;
       top: 52%; } }
   @media (max-width: 1024px) {
-    .main-textbox.four {
+    .main-textbox.four, .four.main-textbox_mobile {
       top: 79%; } }
 
-.main-textbox.five {
+.main-textbox.five, .five.main-textbox_mobile {
   top: 20%;
   left: 25%; }
-  .main-textbox.five .main-textbox--arrow {
+  .main-textbox.five .main-textbox--arrow, .five.main-textbox_mobile .main-textbox--arrow {
     top: 100%;
     left: 100%;
     transform: rotate(45deg);
     margin-top: 20px;
     margin-left: -5px; }
   @media (max-width: 1680px) {
-    .main-textbox.five {
+    .main-textbox.five, .five.main-textbox_mobile {
       left: 19%; } }
   @media (max-width: 1440px) {
-    .main-textbox.five {
+    .main-textbox.five, .five.main-textbox_mobile {
       left: 17%; } }
   @media (max-width: 1024px) {
-    .main-textbox.five {
+    .main-textbox.five, .five.main-textbox_mobile {
       top: 36%;
       left: 15%; } }
 
@@ -480,23 +503,38 @@ body {
 .opsway--list-icon.distant {
   background-image: url("../img/icon-distant.png"); }
 
-.slider {
+.slider, .main--slider {
   margin: 95px 0; }
-  .slider .bx-wrapper .bx-viewport {
+  .slider .bx-wrapper .bx-viewport, .main--slider .bx-wrapper .bx-viewport {
     box-shadow: none; }
-  .slider .bx-wrapper .bx-controls-direction a {
+  .slider .bx-wrapper .bx-controls-direction a, .main--slider .bx-wrapper .bx-controls-direction a {
     width: 40px;
     height: 41px; }
-  .slider .bx-prev {
+  .slider .bx-prev, .main--slider .bx-prev {
     background: url("../img/arrow-left.png");
     left: -155px; }
-    .slider .bx-prev:hover {
+    .slider .bx-prev:hover, .main--slider .bx-prev:hover {
       background-position: left top; }
-  .slider .bx-next {
+  .slider .bx-next, .main--slider .bx-next {
     background: url("../img/arrow-right.png");
     right: -155px; }
-    .slider .bx-next:hover {
+    .slider .bx-next:hover, .main--slider .bx-next:hover {
       background-position: left top; }
+
+.main--slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 70px; }
+  .main--slider .bx-prev {
+    left: -60px; }
+  .main--slider .bx-next {
+    background: url("../img/arrow-right.png");
+    right: -60px; }
+  .main--slider .bx-wrapper .bx-viewport {
+    background: transparent;
+    border: none; }
 
 .slider--img {
   width: 140px;

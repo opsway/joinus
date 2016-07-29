@@ -24,6 +24,12 @@
   @media (max-width: 1024px) {
     margin-top: 39%;
   }
+  @media (max-width: 767px) {
+    margin: -15px 0 0;
+    width: 210px;
+    height: 255px;
+    margin-right: -35px;
+  }
 }
 
 .main--heading {
@@ -39,6 +45,10 @@
   @media (max-width: 1024px) {
     font-size: 24px;
   }
+  @media (max-width: 767px) {
+    font-size: 20px;
+    padding: 0 15px;
+  }
 }
 
 .main-textbox {
@@ -47,6 +57,15 @@
   border-radius: 10px;
   position: absolute;
   padding: 10px 20px;
+}
+
+.main-textbox_mobile {
+  @extend .main-textbox;
+  position: static;
+  width: 195px;
+  height: 55px;
+  font-size: 13px;
+  text-align: center;
 }
 
 .main-textbox--arrow {

@@ -35,3 +35,10 @@
     display: none;
   }
 }
+
+.show--xs {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
