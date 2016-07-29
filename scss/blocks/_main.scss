@@ -1,20 +1,36 @@
 .main {
   height: calc(100vh - 75px);
   background-color: #2d3743;
-  background-image: url("../img/main-bg.png");
+  /*background-image: url("../img/main-bg.png");
   background-repeat: no-repeat;
   background-size: 25%;
   background-position-x: calc(50% + 10px);
-  background-position-y: 72%;
+  background-position-y: 72%;*/
   position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.main--image {
+  align-self: center;
+  width: 525px;
+  height: 643px;
+  background-image: url("../img/main-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   @media (max-width: 1440px) {
-    background-size: 22%;
+    width: 400px;
+    height: 490px;
   }
 }
 
 .main--heading {
   color: #ffffff;
   margin-top: 65px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
   @media (max-width: 1440px) {
     margin-top: 40px;
   }
@@ -55,6 +71,9 @@ $textboxes: one, two, three, four, five;
     margin-top: 20px;
     margin-right: -5px;
   }
+  @media (max-width: 1680px) {
+    top: 18%;
+  }
   @media (max-width: 1440px) {
     top: 20%;
   }
@@ -70,6 +89,10 @@ $textboxes: one, two, three, four, five;
     margin-bottom: 20px;
     margin-right: -5px;
   }
+  @media (max-width: 1680px) {
+    top: 50%;
+    left: 69%;
+  }
 }
 
 .main-textbox.three {
@@ -81,6 +104,9 @@ $textboxes: one, two, three, four, five;
     transform: rotate(45deg);
     margin-bottom: 20px;
     margin-right: -5px;
+  }
+  @media (max-width: 1680px) {
+    top: 63%;
   }
 }
 
@@ -94,8 +120,12 @@ $textboxes: one, two, three, four, five;
     margin-top: 20px;
     margin-left: -5px;
   }
-  @media (max-width: 1440px) {
+  @media (max-width: 1680px) {
     left: 20%;
+  }
+  @media (max-width: 1440px) {
+    left: 19%;
+    top: 52%;
   }
 }
 
@@ -108,6 +138,9 @@ $textboxes: one, two, three, four, five;
     transform: rotate(45deg);
     margin-top: 20px;
     margin-left: -5px;
+  }
+  @media (max-width: 1680px) {
+    left: 19%;
   }
   @media (max-width: 1440px) {
     left: 17%;
@@ -132,6 +165,9 @@ $textboxes: one, two, three, four, five;
     content: " ";
     left: 6px;
     top: 6px;
+  }
+  @media (max-width: 1680px) {
+    margin-left: -50px;
   }
   @media (max-width: 1440px) {
     margin-left: -25px;

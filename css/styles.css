@@ -36,6 +36,10 @@
   .hidden--xs {
     display: none; } }
 
+@media (max-width: 1023px) {
+  .hidden--sm {
+    display: none; } }
+
 .header {
   background: #313341;
   color: #ffffff; }
@@ -156,19 +160,34 @@
 .main {
   height: calc(100vh - 75px);
   background-color: #2d3743;
-  background-image: url("../img/main-bg.png");
+  /*background-image: url("../img/main-bg.png");
   background-repeat: no-repeat;
   background-size: 25%;
   background-position-x: calc(50% + 10px);
-  background-position-y: 72%;
-  position: relative; }
+  background-position-y: 72%;*/
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+.main--image {
+  align-self: center;
+  width: 525px;
+  height: 643px;
+  background-image: url("../img/main-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%; }
   @media (max-width: 1440px) {
-    .main {
-      background-size: 22%; } }
+    .main--image {
+      width: 400px;
+      height: 490px; } }
 
 .main--heading {
   color: #ffffff;
-  margin-top: 65px; }
+  margin-top: 65px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0; }
   @media (max-width: 1440px) {
     .main--heading {
       margin-top: 40px; } }
@@ -195,6 +214,9 @@
     transform: rotate(-45deg);
     margin-top: 20px;
     margin-right: -5px; }
+  @media (max-width: 1680px) {
+    .main-textbox.one {
+      top: 18%; } }
   @media (max-width: 1440px) {
     .main-textbox.one {
       top: 20%; } }
@@ -208,6 +230,10 @@
     transform: rotate(45deg);
     margin-bottom: 20px;
     margin-right: -5px; }
+  @media (max-width: 1680px) {
+    .main-textbox.two {
+      top: 50%;
+      left: 69%; } }
 
 .main-textbox.three {
   top: 70%;
@@ -218,6 +244,9 @@
     transform: rotate(45deg);
     margin-bottom: 20px;
     margin-right: -5px; }
+  @media (max-width: 1680px) {
+    .main-textbox.three {
+      top: 63%; } }
 
 .main-textbox.four {
   top: 55%;
@@ -228,9 +257,13 @@
     transform: rotate(45deg);
     margin-top: 20px;
     margin-left: -5px; }
-  @media (max-width: 1440px) {
+  @media (max-width: 1680px) {
     .main-textbox.four {
       left: 20%; } }
+  @media (max-width: 1440px) {
+    .main-textbox.four {
+      left: 19%;
+      top: 52%; } }
 
 .main-textbox.five {
   top: 20%;
@@ -241,6 +274,9 @@
     transform: rotate(45deg);
     margin-top: 20px;
     margin-left: -5px; }
+  @media (max-width: 1680px) {
+    .main-textbox.five {
+      left: 19%; } }
   @media (max-width: 1440px) {
     .main-textbox.five {
       left: 17%; } }
@@ -263,6 +299,9 @@
     content: " ";
     left: 6px;
     top: 6px; }
+  @media (max-width: 1680px) {
+    .main--anchor {
+      margin-left: -50px; } }
   @media (max-width: 1440px) {
     .main--anchor {
       margin-left: -25px;
