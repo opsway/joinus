@@ -22,6 +22,10 @@
     width: 400px;
     height: 490px;
   }
+  @media (max-width: 1370px) {
+    width: 340px;
+    height: 410px;
+  }
 }
 
 .main--heading {
@@ -77,6 +81,9 @@ $textboxes: one, two, three, four, five;
   @media (max-width: 1440px) {
     top: 20%;
   }
+  @media (max-width: 1370px) {
+    top: 15%;
+  }
 }
 
 .main-textbox.two {
@@ -93,6 +100,9 @@ $textboxes: one, two, three, four, five;
     top: 50%;
     left: 69%;
   }
+  @media (max-width: 1370px) {
+    left: 65%;
+  }
 }
 
 .main-textbox.three {
@@ -107,6 +117,9 @@ $textboxes: one, two, three, four, five;
   }
   @media (max-width: 1680px) {
     top: 63%;
+  }
+  @media (max-width: 1370px) {
+    top: 67%;
   }
 }
 
@@ -170,7 +183,11 @@ $textboxes: one, two, three, four, five;
     margin-left: -50px;
   }
   @media (max-width: 1440px) {
-    margin-left: -25px;
+    margin-left: -38px;
+    bottom: 12px;
+  }
+  @media (max-width: 1370px) {
+    margin-left: -34px;
     bottom: 12px;
   }
 }

@@ -180,6 +180,10 @@
     .main--image {
       width: 400px;
       height: 490px; } }
+  @media (max-width: 1370px) {
+    .main--image {
+      width: 340px;
+      height: 410px; } }
 
 .main--heading {
   color: #ffffff;
@@ -220,6 +224,9 @@
   @media (max-width: 1440px) {
     .main-textbox.one {
       top: 20%; } }
+  @media (max-width: 1370px) {
+    .main-textbox.one {
+      top: 15%; } }
 
 .main-textbox.two {
   top: 55%;
@@ -234,6 +241,9 @@
     .main-textbox.two {
       top: 50%;
       left: 69%; } }
+  @media (max-width: 1370px) {
+    .main-textbox.two {
+      left: 65%; } }
 
 .main-textbox.three {
   top: 70%;
@@ -247,6 +257,9 @@
   @media (max-width: 1680px) {
     .main-textbox.three {
       top: 63%; } }
+  @media (max-width: 1370px) {
+    .main-textbox.three {
+      top: 67%; } }
 
 .main-textbox.four {
   top: 55%;
@@ -304,7 +317,11 @@
       margin-left: -50px; } }
   @media (max-width: 1440px) {
     .main--anchor {
-      margin-left: -25px;
+      margin-left: -38px;
+      bottom: 12px; } }
+  @media (max-width: 1370px) {
+    .main--anchor {
+      margin-left: -34px;
       bottom: 12px; } }
 
 .item {
