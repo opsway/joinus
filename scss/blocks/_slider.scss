@@ -29,12 +29,14 @@
   left: 0;
   width: 100%;
   padding: 0 70px;
+  padding-right: 60px;
+  margin: 0 0 25px;
   .bx-prev {
     left: -60px;
   }
   .bx-next {
     background: url("../img/arrow-right.png");
-    right: -60px;
+    right: -50px;
   }
   .bx-wrapper .bx-viewport {
     background: transparent;
