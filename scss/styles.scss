@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,400italic,700&subset=latin,cyrillic-ext);
 
-@import "header";
-@import "footer";
 @import "buttons";
 @import "helpers";
+@import "header";
+@import "footer";
 
 @import "blocks/main";
 @import "blocks/items";
@@ -45,5 +45,11 @@ body {
   &:after {
     left: 100%;
     margin-left: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
   }
 }

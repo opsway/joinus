@@ -1,4 +1,37 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,400italic,700&subset=latin,cyrillic-ext);
+.button-main {
+  border-radius: 25px;
+  padding: 0px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #ffffff;
+  height: 40px;
+  line-height: 40px;
+  background: #22b14d;
+  border: none; }
+  .button-main:hover, .button-main:focus {
+    text-decoration: none;
+    color: #ffffff; }
+
+.mt-15 {
+  margin-top: 15px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-60 {
+  margin-top: 60px; }
+
+.mt-100 {
+  margin-top: 100px; }
+
+.mb-80 {
+  margin-bottom: 80px; }
+
+.color-main {
+  color: #22b14d; }
+
 .header {
   background: #313341;
   color: #ffffff; }
@@ -9,6 +42,10 @@
   height: 75px;
   text-decoration: none;
   display: inline-block; }
+  @media (max-width: 1024px) {
+    .logo {
+      line-height: 50px;
+      height: 50px; } }
 
 .logo--img {
   vertical-align: middle; }
@@ -43,11 +80,25 @@
   margin-right: 10px; }
   .header-nav--item.active {
     border-bottom: 4px solid #65b57d; }
+  @media (max-width: 1024px) {
+    .header-nav--item {
+      line-height: 50px;
+      height: 50px; } }
 
 .header-nav--item-link {
   color: #b6b8c4; }
   .header-nav--item-link:hover {
     text-decoration: none; }
+
+@media (max-width: 1200px) {
+  .header--button {
+    padding: 0 19px; } }
+@media (max-width: 1024px) {
+  .header--button {
+    font-size: 11px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px; } }
 
 .footer {
   background: #2d333a;
@@ -80,39 +131,6 @@
 
 .icon-symbol {
   color: #2d333a; }
-
-.button-main {
-  border-radius: 25px;
-  padding: 0px 30px;
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: 100;
-  color: #ffffff;
-  height: 40px;
-  line-height: 40px;
-  background: #22b14d;
-  border: none; }
-  .button-main:hover, .button-main:focus {
-    text-decoration: none;
-    color: #ffffff; }
-
-.mt-15 {
-  margin-top: 15px; }
-
-.mt-30 {
-  margin-top: 30px; }
-
-.mt-60 {
-  margin-top: 60px; }
-
-.mt-100 {
-  margin-top: 100px; }
-
-.mb-80 {
-  margin-bottom: 80px; }
-
-.color-main {
-  color: #22b14d; }
 
 .main {
   height: calc(100vh - 75px);
@@ -432,5 +450,9 @@ body {
   .heading--stripes:after {
     left: 100%;
     margin-left: 20px; }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

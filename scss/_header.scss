@@ -13,6 +13,10 @@
   height: 75px;
   text-decoration: none;
   display: inline-block;
+  @media (max-width: 1024px) {
+    line-height: 50px;
+    height: 50px;
+  }
 }
 
 .logo--img {
@@ -55,11 +59,30 @@
   &.active {
     border-bottom: 4px solid $color-main-light;
   }
+  @media (max-width: 1024px) {
+    line-height: 50px;
+    height: 50px;
+  }
 }
 
 .header-nav--item-link {
   color: #b6b8c4;
   &:hover {
     text-decoration: none;
+  }
+}
+
+// responsive
+
+.header--button {
+  @media (max-width: 1200px) {
+    padding: 0 19px; // falls on 1025
+  }
+  @media (max-width: 1024px) {
+    font-size: 11px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+
   }
 }
