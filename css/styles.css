@@ -1,4 +1,37 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,400italic,700&subset=latin,cyrillic-ext);
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.heading {
+  font-size: 36px;
+  font-weight: 100;
+  text-align: center; }
+
+.heading--sign {
+  font-size: 18px;
+  color: #274953;
+  font-weight: 100; }
+
+.heading--stripes {
+  position: relative; }
+  .heading--stripes:before, .heading--stripes:after {
+    content: " ";
+    position: absolute;
+    background: #f3f4f4;
+    height: 10px;
+    width: 40%;
+    top: 50%;
+    margin-top: -5px; }
+  .heading--stripes:before {
+    right: 100%;
+    margin-right: 20px; }
+  .heading--stripes:after {
+    left: 100%;
+    margin-left: 20px; }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%; } }
 .button-main {
   border-radius: 25px;
   padding: 0px 30px;
@@ -160,11 +193,6 @@
 .main {
   height: calc(100vh - 75px);
   background-color: #2d3743;
-  /*background-image: url("../img/main-bg.png");
-  background-repeat: no-repeat;
-  background-size: 25%;
-  background-position-x: calc(50% + 10px);
-  background-position-y: 72%;*/
   position: relative;
   display: flex;
   justify-content: center; }
@@ -184,6 +212,9 @@
     .main--image {
       width: 340px;
       height: 410px; } }
+  @media (max-width: 1024px) {
+    .main--image {
+      margin-top: 39%; } }
 
 .main--heading {
   color: #ffffff;
@@ -195,6 +226,9 @@
   @media (max-width: 1440px) {
     .main--heading {
       margin-top: 40px; } }
+  @media (max-width: 1024px) {
+    .main--heading {
+      font-size: 24px; } }
 
 .main-textbox {
   background: linear-gradient(to top, #dbe9e9, #ffffff);
@@ -227,6 +261,9 @@
   @media (max-width: 1370px) {
     .main-textbox.one {
       top: 15%; } }
+  @media (max-width: 1024px) {
+    .main-textbox.one {
+      top: 35%; } }
 
 .main-textbox.two {
   top: 55%;
@@ -244,6 +281,10 @@
   @media (max-width: 1370px) {
     .main-textbox.two {
       left: 65%; } }
+  @media (max-width: 1024px) {
+    .main-textbox.two {
+      top: 86%;
+      left: 69%; } }
 
 .main-textbox.three {
   top: 70%;
@@ -260,6 +301,9 @@
   @media (max-width: 1370px) {
     .main-textbox.three {
       top: 67%; } }
+  @media (max-width: 1024px) {
+    .main-textbox.three {
+      top: 103%; } }
 
 .main-textbox.four {
   top: 55%;
@@ -277,6 +321,9 @@
     .main-textbox.four {
       left: 19%;
       top: 52%; } }
+  @media (max-width: 1024px) {
+    .main-textbox.four {
+      top: 79%; } }
 
 .main-textbox.five {
   top: 20%;
@@ -293,6 +340,10 @@
   @media (max-width: 1440px) {
     .main-textbox.five {
       left: 17%; } }
+  @media (max-width: 1024px) {
+    .main-textbox.five {
+      top: 36%;
+      left: 15%; } }
 
 .main--anchor {
   position: absolute;
@@ -497,39 +548,5 @@
 .feedback--button {
   width: 250px;
   margin-top: 55px; }
-
-body {
-  font-family: 'Open Sans', sans-serif; }
-
-.heading {
-  font-size: 36px;
-  font-weight: 100;
-  text-align: center; }
-
-.heading--sign {
-  font-size: 18px;
-  color: #274953;
-  font-weight: 100; }
-
-.heading--stripes {
-  position: relative; }
-  .heading--stripes:before, .heading--stripes:after {
-    content: " ";
-    position: absolute;
-    background: #f3f4f4;
-    height: 10px;
-    width: 40%;
-    top: 50%;
-    margin-top: -5px; }
-  .heading--stripes:before {
-    right: 100%;
-    margin-right: 20px; }
-  .heading--stripes:after {
-    left: 100%;
-    margin-left: 20px; }
-
-@media (max-width: 1200px) {
-  .container {
-    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

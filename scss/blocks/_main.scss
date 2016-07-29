@@ -1,11 +1,6 @@
 .main {
   height: calc(100vh - 75px);
   background-color: #2d3743;
-  /*background-image: url("../img/main-bg.png");
-  background-repeat: no-repeat;
-  background-size: 25%;
-  background-position-x: calc(50% + 10px);
-  background-position-y: 72%;*/
   position: relative;
   display: flex;
   justify-content: center;
@@ -26,6 +21,9 @@
     width: 340px;
     height: 410px;
   }
+  @media (max-width: 1024px) {
+    margin-top: 39%;
+  }
 }
 
 .main--heading {
@@ -37,6 +35,9 @@
   top: 0;
   @media (max-width: 1440px) {
     margin-top: 40px;
+  }
+  @media (max-width: 1024px) {
+    font-size: 24px;
   }
 }
 
@@ -84,6 +85,9 @@ $textboxes: one, two, three, four, five;
   @media (max-width: 1370px) {
     top: 15%;
   }
+  @media (max-width: 1024px) {
+    top: 35%;
+  }
 }
 
 .main-textbox.two {
@@ -103,6 +107,10 @@ $textboxes: one, two, three, four, five;
   @media (max-width: 1370px) {
     left: 65%;
   }
+  @media (max-width: 1024px) {
+    top: 86%;
+    left: 69%;
+  }
 }
 
 .main-textbox.three {
@@ -120,6 +128,9 @@ $textboxes: one, two, three, four, five;
   }
   @media (max-width: 1370px) {
     top: 67%;
+  }
+  @media (max-width: 1024px) {
+    top: 103%;
   }
 }
 
@@ -140,6 +151,9 @@ $textboxes: one, two, three, four, five;
     left: 19%;
     top: 52%;
   }
+  @media (max-width: 1024px) {
+    top: 79%;
+  }
 }
 
 .main-textbox.five {
@@ -157,6 +171,10 @@ $textboxes: one, two, three, four, five;
   }
   @media (max-width: 1440px) {
     left: 17%;
+  }
+  @media (max-width: 1024px) {
+    top: 36%;
+    left: 15%;
   }
 }
 

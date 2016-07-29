@@ -1,15 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,400italic,700&subset=latin,cyrillic-ext);
 
-@import "buttons";
-@import "helpers";
-@import "header";
-@import "footer";
-
-@import "blocks/main";
-@import "blocks/items";
-@import "blocks/opsway";
-@import "blocks/slider";
-@import "blocks/feedback";
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -53,3 +43,14 @@ body {
     width: 100%;
   }
 }
+
+@import "buttons";
+@import "helpers";
+@import "header";
+@import "footer";
+
+@import "blocks/main";
+@import "blocks/items";
+@import "blocks/opsway";
+@import "blocks/slider";
+@import "blocks/feedback";
