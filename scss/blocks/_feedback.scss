@@ -12,6 +12,9 @@
 
 .feedback--form {
   margin-top: 55px;
+  @media (max-width: 767px) {
+    margin-top: 25px;
+  }
 }
 
 .feedback--input {
@@ -23,6 +26,10 @@
   width: 100%;
   margin-bottom: 15px;
   padding: 0 10px;
+  @media (max-width: 767px) {
+    height: 35px;
+    line-height: 35px;
+  }
 }
 
 .feedback--textarea {
@@ -30,9 +37,15 @@
   line-height: 1.5;
   height: 265px;
   padding: 15px 10px;
+  @media (max-width: 767px) {
+    height: 140px;
+  }
 }
 
 .feedback--button {
   width: 250px;
   margin-top: 55px;
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
 }
