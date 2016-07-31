@@ -1,5 +1,11 @@
 .slider--wrap {
   margin: 95px 0;
+  @media (max-width: 1024px) {
+    margin: 55px 0;
+  }
+  @media (max-width: 767px) {
+    margin: 45px 0;
+  }
 }
 
 .slider {
@@ -37,9 +43,9 @@
       right: -65px;
     }
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 767px) {
     padding: 0 20px;
-    padding-bottom: 60px;
+    //padding-bottom: 60px;
     .bx-wrapper .bx-controls-direction a {
       display: none;
       /*top: 100%;
@@ -96,7 +102,9 @@
   margin-top: 20px;
   font-weight: 100;
   padding: 0 5px;
-
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
 }
 
 .slider--sign {
@@ -104,4 +112,8 @@
   font-size: 24px;
   color: #212121;
   margin-top: 35px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+    font-weight: bold;
+  }
 }
