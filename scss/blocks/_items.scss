@@ -32,12 +32,22 @@ $icons: admin, circles, experience, management, money, team;
     font-size: 12px;
     padding: 0 60px;
   }
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
 
 .item--icon_small {
   @extend .item--icon;
   width: 40px;
   height: 40px;
+  @media (max-width: 1023px) {
+    margin-bottom: 10px;
+  }
+  @media (max-width: 767px) {
+    background-position: center;
+    margin-bottom: 0;
+  }
 }
 
 $icons-small: bill, eiffel, luggage, sea;

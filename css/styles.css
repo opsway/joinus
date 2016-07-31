@@ -88,6 +88,14 @@ body {
     .show--xs {
       display: block; } }
 
+@media (max-width: 767px) {
+  .mt-30--xs {
+    margin-top: 30px; } }
+
+@media (max-width: 767px) {
+  .mb-40--xs {
+    margin-bottom: 40px; } }
+
 .header {
   background: #313341;
   color: #ffffff; }
@@ -452,10 +460,20 @@ body {
     .item_small {
       font-size: 12px;
       padding: 0 60px; } }
+  @media (max-width: 767px) {
+    .item_small {
+      margin-bottom: 20px; } }
 
 .item--icon_small {
   width: 40px;
   height: 40px; }
+  @media (max-width: 1023px) {
+    .item--icon_small {
+      margin-bottom: 10px; } }
+  @media (max-width: 767px) {
+    .item--icon_small {
+      background-position: center;
+      margin-bottom: 0; } }
 
 .item--icon.bill, .bill.item--icon_small {
   background-image: url("../img/icon-bill.png"); }
