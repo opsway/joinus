@@ -26,9 +26,9 @@
   }
   @media (max-width: 767px) {
     margin: -15px 0 0;
-    width: 210px;
-    height: 255px;
     margin-right: -35px;
+    width: 220px;
+    height: 265px;
   }
 }
 
@@ -48,6 +48,8 @@
   @media (max-width: 767px) {
     font-size: 20px;
     padding: 0 15px;
+    margin-top: 30px;
+    line-height: 1.5;
   }
 }
 

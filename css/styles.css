@@ -6,11 +6,17 @@ body {
   font-size: 36px;
   font-weight: 100;
   text-align: center; }
+  @media (max-width: 767px) {
+    .heading {
+      font-size: 24px; } }
 
 .heading--sign {
   font-size: 18px;
   color: #274953;
   font-weight: 100; }
+  @media (max-width: 767px) {
+    .heading--sign {
+      font-size: 16px; } }
 
 .heading--stripes {
   position: relative; }
@@ -227,9 +233,9 @@ body {
   @media (max-width: 767px) {
     .main--image {
       margin: -15px 0 0;
-      width: 210px;
-      height: 255px;
-      margin-right: -35px; } }
+      margin-right: -35px;
+      width: 220px;
+      height: 265px; } }
 
 .main--heading {
   color: #ffffff;
@@ -247,7 +253,9 @@ body {
   @media (max-width: 767px) {
     .main--heading {
       font-size: 20px;
-      padding: 0 15px; } }
+      padding: 0 15px;
+      margin-top: 30px;
+      line-height: 1.5; } }
 
 .main-textbox, .main-textbox_mobile {
   background: linear-gradient(to top, #dbe9e9, #ffffff);
@@ -406,6 +414,9 @@ body {
   text-align: center;
   font-size: 20px;
   color: #000000; }
+  @media (max-width: 767px) {
+    .item {
+      font-size: 15px; } }
 
 .item--icon, .item--icon_small {
   width: 144px;
@@ -437,6 +448,10 @@ body {
   text-align: center;
   color: #898989;
   font-size: 20px; }
+  @media (max-width: 1023px) {
+    .item_small {
+      font-size: 12px;
+      padding: 0 60px; } }
 
 .item--icon_small {
   width: 40px;

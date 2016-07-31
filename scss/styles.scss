@@ -9,12 +9,18 @@ body {
   font-size: 36px;
   font-weight: 100;
   text-align: center;
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
 }
 
 .heading--sign {
   font-size: 18px;
   color: #274953;
   font-weight: 100;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
 }
 
 .heading--stripes {
