@@ -29,6 +29,9 @@ body {
     left: 100%;
     margin-left: 20px; }
 
+.heading--stripes-wrap {
+  overflow: hidden; }
+
 @media (max-width: 1200px) {
   .container {
     width: 100%; } }
@@ -504,23 +507,27 @@ body {
 .opsway--list-icon.distant {
   background-image: url("../img/icon-distant.png"); }
 
-.slider, .main--slider {
+.slider--wrap {
   margin: 95px 0; }
-  .slider .bx-wrapper .bx-viewport, .main--slider .bx-wrapper .bx-viewport {
-    box-shadow: none; }
-  .slider .bx-wrapper .bx-controls-direction a, .main--slider .bx-wrapper .bx-controls-direction a {
-    width: 40px;
-    height: 41px; }
-  .slider .bx-prev, .main--slider .bx-prev {
-    background: url("../img/arrow-left.png");
-    left: -155px; }
-    .slider .bx-prev:hover, .main--slider .bx-prev:hover {
-      background-position: left top; }
-  .slider .bx-next, .main--slider .bx-next {
-    background: url("../img/arrow-right.png");
-    right: -155px; }
-    .slider .bx-next:hover, .main--slider .bx-next:hover {
-      background-position: left top; }
+
+.slider .bx-wrapper .bx-viewport {
+  box-shadow: none; }
+.slider .bx-wrapper .bx-controls-direction a {
+  width: 40px;
+  height: 41px; }
+.slider .bx-prev {
+  background: url("../img/arrow-left.png");
+  left: -130px; }
+  .slider .bx-prev:hover {
+    background-position: left top; }
+.slider .bx-next {
+  background: url("../img/arrow-right.png");
+  right: -130px; }
+  .slider .bx-next:hover {
+    background-position: left top; }
+
+.slider {
+  padding: 0 150px; }
 
 .main--slider {
   position: absolute;
@@ -530,6 +537,8 @@ body {
   padding: 0 70px;
   padding-right: 60px;
   margin: 0 0 25px; }
+  .main--slider .bx-wrapper .bx-viewport {
+    box-shadow: none; }
   .main--slider .bx-prev {
     left: -60px; }
   .main--slider .bx-next {
