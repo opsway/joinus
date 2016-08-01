@@ -5,21 +5,54 @@
   background-position: top -59px left 65%;
   background-repeat: no-repeat;
   padding: 85px 0 185px;
+  @media (max-width: 767px) {
+    background-size: 60%;
+    background-position: top -20px right -20%;
+    padding: 45px 10px;
+  }
+}
+
+.opsway--heading {
+  font-size: 48px;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+  }
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
 }
 
 .opsway--list-heading {
   font-size: 24px;
   text-transform: uppercase;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
 }
 
 .opsway--list {
   margin: 30px 0;
   font-size: 16px;
+  padding: 0;
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
 }
 
 .opsway--list-item {
   list-style-type: none;
   line-height: 28px;
+  position: relative;
+  padding: 5px 0;
+  padding-left: 40px;
+  @media (max-width: 767px) {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 .opsway--list-icon {
@@ -31,6 +64,9 @@
   vertical-align: middle;
   margin: 5px 0;
   margin-right: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 $icons: service, flexibility, commerce, market, distant;
