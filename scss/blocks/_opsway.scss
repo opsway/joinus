@@ -5,6 +5,10 @@
   background-position: top -59px left 65%;
   background-repeat: no-repeat;
   padding: 85px 0 185px;
+  @media (max-width: 1024px) {
+    background-size: 50%;
+    background-position-x: right;
+  }
   @media (max-width: 767px) {
     background-size: 60%;
     background-position: top -20px right -20%;

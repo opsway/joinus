@@ -532,6 +532,10 @@ body {
   background-position: top -59px left 65%;
   background-repeat: no-repeat;
   padding: 85px 0 185px; }
+  @media (max-width: 1024px) {
+    .opsway {
+      background-size: 50%;
+      background-position-x: right; } }
   @media (max-width: 767px) {
     .opsway {
       background-size: 60%;
