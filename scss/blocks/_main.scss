@@ -12,18 +12,24 @@
 
 .main--image {
   align-self: center;
-  width: 525px;
-  height: 643px;
+  width: 480px;
+  height: 580px;
   background-image: url("../img/main-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  @media (max-width: 1440px) {
+  position: relative;
+  @media (max-width: 1680px) {
     width: 400px;
     height: 490px;
   }
+  @media (max-width: 1440px) {
+    width: 350px;
+    height: 422px;
+  }
   @media (max-width: 1370px) {
-    width: 340px;
-    height: 410px;
+    width: 300px;
+    height: 366px;
+    margin-top: 30px;
   }
   @media (max-width: 1024px) {
     margin-top: 39%;
@@ -60,9 +66,9 @@
 .main-textbox {
   background: linear-gradient(to top, #dbe9e9, #ffffff);
   color: #274953;
-  border-radius: 10px;
+  border-radius: 5px;
   position: absolute;
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 
 .main-textbox_mobile {
@@ -93,8 +99,9 @@ $textboxes: one, two, three, four, five;
 }
 
 .main-textbox.one {
-  left: 60%;
-  top: 25%;
+  right: -87px;
+  top: -2px;
+
   .main-textbox--arrow {
     top: 100%;
     right: 100%;
@@ -102,23 +109,22 @@ $textboxes: one, two, three, four, five;
     margin-top: 20px;
     margin-right: -5px;
   }
+  @media (max-width: 1370px) {
+    right: -120px;
+    top: -25px;
+  }
   @media (max-width: 1680px) {
-    top: 18%;
   }
   @media (max-width: 1440px) {
-    top: 20%;
   }
-  @media (max-width: 1370px) {
-    top: 15%;
-  }
+
   @media (max-width: 1024px) {
-    top: 35%;
   }
 }
 
 .main-textbox.two {
-  top: 55%;
-  left: 66%;
+  bottom: 270px;
+  right: -190px;
   .main-textbox--arrow {
     bottom: 100%;
     right: 100%;
@@ -161,8 +167,8 @@ $textboxes: one, two, three, four, five;
 }
 
 .main-textbox.four {
-  top: 55%;
-  left: 22%;
+  left: -240px;
+  bottom: 195px;
   .main-textbox--arrow {
     top: 100%;
     left: 100%;
@@ -171,20 +177,20 @@ $textboxes: one, two, three, four, five;
     margin-left: -5px;
   }
   @media (max-width: 1680px) {
-    left: 20%;
   }
   @media (max-width: 1440px) {
-    left: 19%;
-    top: 52%;
+    bottom: 175px;
+  }
+  @media (max-width: 1370px) {
+    bottom: 155px;
   }
   @media (max-width: 1024px) {
-    top: 79%;
   }
 }
 
 .main-textbox.five {
-  top: 20%;
-  left: 25%;
+  top: -30px;
+  left: -245px;
   .main-textbox--arrow {
     top: 100%;
     left: 100%;
@@ -193,14 +199,13 @@ $textboxes: one, two, three, four, five;
     margin-left: -5px;
   }
   @media (max-width: 1680px) {
-    left: 19%;
   }
   @media (max-width: 1440px) {
-    left: 17%;
+  }
+  @media (max-width: 1370px) {
+    left: -260px;
   }
   @media (max-width: 1024px) {
-    top: 36%;
-    left: 15%;
   }
 }
 
