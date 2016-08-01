@@ -132,10 +132,15 @@ body {
       margin-right: -70px; } }
 
 .logo--img {
-  vertical-align: middle;
   max-width: 100%; }
   @media (max-width: 767px) {
     .logo--img {
+      display: none; } }
+
+.logo--img_xs {
+  display: inline-block; }
+  @media (max-width: 767px) {
+    .logo--img_xs {
       image-rendering: optimizeSpeed;
       /* STOP SMOOTHING, GIVE ME SPEED  */
       image-rendering: -moz-crisp-edges;
@@ -150,6 +155,9 @@ body {
       /* CSS3 Proposed                  */
       -ms-interpolation-mode: nearest-neighbor;
       /* IE8+                           */ } }
+  @media (min-width: 768px) {
+    .logo--img_xs {
+      display: none; } }
 
 .logo--text {
   display: inline-block;

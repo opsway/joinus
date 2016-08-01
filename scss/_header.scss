@@ -33,8 +33,14 @@
 }
 
 .logo--img {
-  vertical-align: middle;
   max-width: 100%;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.logo--img_xs {
+  display: inline-block;
   @media (max-width: 767px) {
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
@@ -43,6 +49,9 @@
     image-rendering: pixelated; /* Chrome */
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+  }
+  @media (min-width: 768px) {
+    display: none;
   }
 }
 
