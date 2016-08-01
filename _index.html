@@ -119,14 +119,14 @@
     </div>
 
 </div>
-<div id="items">
+<div>
     <div class="container mb-80 mb-40--xs">
-        <h2 class="heading mt-100 mt-40--xs">To join OpsWay’s system</h2>
+        <h2 class="heading mt-100 mt-40--xs" id="items">To join OpsWay’s system</h2>
         <p class="text-center heading--sign">and get lots of new opportunities you should </p>
         <div class="row">
             <div class="col-sm-4">
                 <div class="item">
-                    <span class="item--icon experience"></span>
+                    <span class="item--icon experience" id="icon1"></span>
                     <p class="item--text">
                         offer IT services for over 1 year
                     </p>
@@ -134,7 +134,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="item">
-                    <span class="item--icon team"></span>
+                    <span class="item--icon team" id="icon2"></span>
                     <p class="item--text">
                         have a 5 to 20-member team of specialists
                     </p>
@@ -142,7 +142,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="item">
-                    <span class="item--icon management"></span>
+                    <span class="item--icon management" id="icon3"></span>
                     <p class="item--text">
                         Менеджмент свободно
                         <br>
@@ -160,10 +160,10 @@
             We have a motto “One for all, and all for one” which means every team should pay fixed interest rate.
             The larger we are, the lower rate is, the more teams we have, the more dynamic and reliable OpsWay will be.
         </div>
-        <div class="row">
+        <div class="row" id="items2">
             <div class="col-sm-4">
                 <div class="item item_middle">
-                    <span class="item--icon item--icon_middle circles"></span>
+                    <span class="item--icon item--icon_middle circles" id="icon4"></span>
                     <p class="item--text">
                         You just do what you are perfect at
                     </p>
@@ -171,7 +171,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="item item_middle">
-                    <span class="item--icon item--icon_middle admin"></span>
+                    <span class="item--icon item--icon_middle admin" id="icon5"></span>
                     <p class="item--text">
                         We help you to develop and resolve your administrative issues
                     </p>
@@ -179,7 +179,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="item item_middle">
-                    <span class="item--icon item--icon_middle money"></span>
+                    <span class="item--icon item--icon_middle money" id="icon6"></span>
                     <p class="item--text">
                         We earn and get interesting projects together
                     </p>
@@ -400,6 +400,36 @@
                 scrollTop: $('#items').offset().top
             },1000);
         });
+        if($(window).width() > 767) {
+            $(window).scroll(function () {
+                var offsetIconsTop = $('#items').offset().top - $(window).scrollTop();
+                var offsetIconsBottom = $('#items2').offset().top - $(window).scrollTop();
+                if(offsetIconsTop <= 200){
+                    $('#icon1,#icon2,#icon3').animate({
+                        opacity: 1
+                    },1000);
+                }
+                if(offsetIconsBottom <= 400){
+                    $('#icon4,#icon5,#icon6').animate({
+                        opacity: 1
+                    },1000);
+                }
+            });
+        }
+        else {
+            $(window).scroll(function () {
+                var ids = ['#icon1','#icon2','#icon3','#icon4','#icon5','#icon6'];
+                for(var i = 0; i < ids.length; i++) {
+                    var offsetIcon = $(ids[i]).offset().top - $(window).scrollTop();
+                    if(offsetIcon <= 500) {
+                        $(ids[i]).animate({
+                            opacity: 1
+                        },1000);
+                    }
+                }
+            });
+        }
+
     });
 </script>
 </body>

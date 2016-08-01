@@ -445,7 +445,8 @@ body {
   display: inline-block;
   background-position: bottom center;
   background-repeat: no-repeat;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  opacity: 0; }
   @media (max-width: 767px) {
     .item--icon, .item--icon_small {
       width: 110px;
@@ -492,6 +493,7 @@ body {
       margin-bottom: 20px; } }
 
 .item--icon_small {
+  opacity: 1;
   width: 40px;
   height: 40px; }
   @media (max-width: 1023px) {
