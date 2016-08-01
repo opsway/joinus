@@ -5,6 +5,9 @@
   position: relative;
   display: flex;
   justify-content: center;
+  @media (max-width: 1024px) {
+    margin-top: 50px;
+  }
 }
 
 .main--image {
