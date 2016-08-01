@@ -357,7 +357,7 @@ body {
       top: -25px; } }
 
 .main-textbox.two, .two.main-textbox_mobile {
-  bottom: 270px;
+  top: 260px;
   right: -190px; }
   .main-textbox.two .main-textbox--arrow, .two.main-textbox_mobile .main-textbox--arrow {
     bottom: 100%;
@@ -365,36 +365,22 @@ body {
     transform: rotate(45deg);
     margin-bottom: 20px;
     margin-right: -5px; }
-  @media (max-width: 1680px) {
+  @media (max-width: 1440px) {
     .main-textbox.two, .two.main-textbox_mobile {
-      top: 50%;
-      left: 69%; } }
-  @media (max-width: 1370px) {
-    .main-textbox.two, .two.main-textbox_mobile {
-      left: 65%; } }
-  @media (max-width: 1024px) {
-    .main-textbox.two, .two.main-textbox_mobile {
-      top: 86%;
-      left: 69%; } }
+      top: 180px; } }
 
 .main-textbox.three, .three.main-textbox_mobile {
-  top: 70%;
-  left: 62%; }
+  bottom: 70px;
+  right: -160px; }
   .main-textbox.three .main-textbox--arrow, .three.main-textbox_mobile .main-textbox--arrow {
     bottom: 100%;
     right: 100%;
     transform: rotate(45deg);
     margin-bottom: 20px;
     margin-right: -5px; }
-  @media (max-width: 1680px) {
+  @media (max-width: 1440px) {
     .main-textbox.three, .three.main-textbox_mobile {
-      top: 63%; } }
-  @media (max-width: 1370px) {
-    .main-textbox.three, .three.main-textbox_mobile {
-      top: 67%; } }
-  @media (max-width: 1024px) {
-    .main-textbox.three, .three.main-textbox_mobile {
-      top: 103%; } }
+      bottom: 40px; } }
 
 .main-textbox.four, .four.main-textbox_mobile {
   left: -240px;
