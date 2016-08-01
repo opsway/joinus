@@ -82,7 +82,7 @@
         up to $40 000 into your team
         <span class="main-textbox--arrow"></span>
     </div>
-    <a href="#items" class="main--anchor hidden--sm"></a>
+    <a href="#items" class="main--anchor hidden--sm" id="main-anchor"></a>
     <div class="main--slider show--xs">
         <ul class="bxslider2">
             <li>
@@ -391,6 +391,14 @@
         });
         $('.bxslider2').bxSlider({
             pager: false
+        });
+        $('#main-anchor').click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            console.log('animate');
+            $('html, body').animate({
+                scrollTop: $('#items').offset().top
+            },1000);
         });
     });
 </script>
