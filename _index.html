@@ -39,7 +39,7 @@
                 </ul>
             </div>
             <div class="col-sm-2 col-xs-6 text-right">
-                <a href="" class="header--button button-main mt-15">send request</a>
+                <a href="#feedback" id="feedback-link" class="header--button button-main mt-15">send request</a>
             </div>
         </div>
 
@@ -119,9 +119,9 @@
     </div>
 
 </div>
-<div>
+<div id="items">
     <div class="container mb-80 mb-40--xs">
-        <h2 class="heading mt-100 mt-40--xs" id="items">To join OpsWay’s system</h2>
+        <h2 class="heading mt-100 mt-40--xs" id="items-icons">To join OpsWay’s system</h2>
         <p class="text-center heading--sign">and get lots of new opportunities you should </p>
         <div class="row">
             <div class="col-sm-4">
@@ -160,7 +160,7 @@
             We have a motto “One for all, and all for one” which means every team should pay fixed interest rate.
             The larger we are, the lower rate is, the more teams we have, the more dynamic and reliable OpsWay will be.
         </div>
-        <div class="row" id="items2">
+        <div class="row" id="items-icons2">
             <div class="col-sm-4">
                 <div class="item item_middle">
                     <span class="item--icon item--icon_middle circles" id="icon4"></span>
@@ -315,7 +315,7 @@
 
     </div>
 </div>
-<div class="feedback">
+<div class="feedback" id="feedback">
     <div class="container">
         <div class="heading">How to contact us</div>
         <p class="text-center feedback--text">Please give us your contact information and we’ll contact you to discuss our cooperation</p>
@@ -393,17 +393,22 @@
             pager: false
         });
         $('#main-anchor').click(function (e) {
+            scrollTo(e,$('#items'));
+        });
+        $('#feedback-link').click(function (e) {
+            scrollTo(e,$('#feedback'));
+        });
+        function scrollTo(e,target){
             e.stopPropagation();
             e.preventDefault();
-            console.log('animate');
             $('html, body').animate({
-                scrollTop: $('#items').offset().top
+                scrollTop: target.offset().top
             },1000);
-        });
+        }
         if($(window).width() > 767) {
             $(window).scroll(function () {
-                var offsetIconsTop = $('#items').offset().top - $(window).scrollTop();
-                var offsetIconsBottom = $('#items2').offset().top - $(window).scrollTop();
+                var offsetIconsTop = $('#items-icons').offset().top - $(window).scrollTop();
+                var offsetIconsBottom = $('#items-icons2').offset().top - $(window).scrollTop();
                 if(offsetIconsTop <= 400){
                     $('#icon1,#icon2,#icon3').animate({
                         opacity: 1
