@@ -8,6 +8,7 @@
   @media (max-width: 1024px) {
     background-size: 50%;
     background-position-x: right;
+    padding: 70px 0 55px;
   }
   @media (max-width: 767px) {
     background-size: 60%;
@@ -18,6 +19,7 @@
 
 .opsway--heading {
   font-size: 48px;
+  margin-bottom: 20px;
   @media (max-width: 1024px) {
     font-size: 36px;
   }

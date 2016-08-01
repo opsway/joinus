@@ -192,6 +192,9 @@ body {
   background: #2d333a;
   color: #c9cacc;
   padding: 30px 0 45px; }
+  @media (max-width: 767px) {
+    .footer {
+      text-align: center; } }
 
 .footer--link {
   color: #c9cacc; }
@@ -209,6 +212,9 @@ body {
 .footer--list {
   margin: 0;
   padding: 0; }
+  @media (max-width: 767px) {
+    .footer--list {
+      margin-bottom: 20px; } }
 
 .footer--list-item {
   list-style-type: none;
@@ -535,7 +541,8 @@ body {
   @media (max-width: 1024px) {
     .opsway {
       background-size: 50%;
-      background-position-x: right; } }
+      background-position-x: right;
+      padding: 70px 0 55px; } }
   @media (max-width: 767px) {
     .opsway {
       background-size: 60%;
@@ -543,7 +550,8 @@ body {
       padding: 45px 10px; } }
 
 .opsway--heading {
-  font-size: 48px; }
+  font-size: 48px;
+  margin-bottom: 20px; }
   @media (max-width: 1024px) {
     .opsway--heading {
       font-size: 36px; } }
