@@ -638,13 +638,13 @@ body {
   background-image: url("../img/icon-distant.png"); }
 
 .slider--wrap {
-  margin: 95px 0; }
+  padding: 95px 0; }
   @media (max-width: 1024px) {
     .slider--wrap {
-      margin: 55px 0; } }
+      padding: 55px 0; } }
   @media (max-width: 767px) {
     .slider--wrap {
-      margin: 45px 0; } }
+      padding: 45px 0; } }
 
 .slider .bx-wrapper .bx-viewport {
   box-shadow: none; }
