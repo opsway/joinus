@@ -86,10 +86,16 @@
   .bx-prev {
     background: url("../img/arrow-left.png");
     left: -60px;
+    &:hover, &:focus {
+      background-position: left top !important;
+    }
   }
   .bx-next {
     background: url("../img/arrow-right.png");
     right: -50px;
+    &:hover, &:focus {
+      background-position: left top !important;
+    }
   }
 }
 
