@@ -283,25 +283,16 @@ body {
 
 .main--image {
   align-self: center;
-  width: 480px;
-  height: 580px;
   background-image: url("../img/main-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  position: relative; }
-  @media (max-width: 1680px) {
-    .main--image {
-      width: 400px;
-      height: 490px; } }
-  @media (max-width: 1440px) {
-    .main--image {
-      width: 350px;
-      height: 422px; } }
+  position: relative;
+  width: 350px;
+  height: 422px; }
   @media (max-width: 1370px) {
     .main--image {
       width: 300px;
-      height: 366px;
-      margin-top: 70px; } }
+      height: 366px; } }
   @media (max-width: 1024px) {
     .main--image {
       margin-top: 39%; } }
@@ -354,8 +345,8 @@ body {
   height: 1px; }
 
 .main-textbox.one, .one.main-textbox_mobile {
-  right: -87px;
-  top: -2px; }
+  right: -115px;
+  top: -20px; }
   .main-textbox.one .main-textbox--arrow, .one.main-textbox_mobile .main-textbox--arrow {
     top: 100%;
     right: 100%;
@@ -368,8 +359,8 @@ body {
       top: -25px; } }
 
 .main-textbox.two, .two.main-textbox_mobile {
-  top: 260px;
-  right: -190px; }
+  top: 210px;
+  right: -240px; }
   .main-textbox.two .main-textbox--arrow, .two.main-textbox_mobile .main-textbox--arrow {
     bottom: 100%;
     right: 100%;

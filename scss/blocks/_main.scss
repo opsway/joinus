@@ -15,24 +15,15 @@
 
 .main--image {
   align-self: center;
-  width: 480px;
-  height: 580px;
   background-image: url("../img/main-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
-  @media (max-width: 1680px) {
-    width: 400px;
-    height: 490px;
-  }
-  @media (max-width: 1440px) {
     width: 350px;
     height: 422px;
-  }
   @media (max-width: 1370px) {
     width: 300px;
     height: 366px;
-    margin-top: 70px;
   }
   @media (max-width: 1024px) {
     margin-top: 39%;
@@ -102,9 +93,8 @@ $textboxes: one, two, three, four, five;
 }
 
 .main-textbox.one {
-  right: -87px;
-  top: -2px;
-
+  right: -115px;
+  top: -20px;
   .main-textbox--arrow {
     top: 100%;
     right: 100%;
@@ -126,8 +116,8 @@ $textboxes: one, two, three, four, five;
 }
 
 .main-textbox.two {
-  top: 260px;
-  right: -190px;
+  top: 210px;
+  right: -240px;
   .main-textbox--arrow {
     bottom: 100%;
     right: 100%;
