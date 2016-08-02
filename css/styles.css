@@ -704,22 +704,21 @@ body {
     height: 41px; }
     .main--slider .bx-wrapper .bx-controls-direction a:hover, .main--slider .bx-wrapper .bx-controls-direction a:focus {
       background-position: left top !important; }
-    @media (max-width: 767px) {
-      .main--slider .bx-wrapper .bx-controls-direction a {
-        image-rendering: optimizeSpeed;
-        /* STOP SMOOTHING, GIVE ME SPEED  */
-        image-rendering: -moz-crisp-edges;
-        /* Firefox                        */
-        image-rendering: -o-crisp-edges;
-        /* Opera                          */
-        image-rendering: -webkit-optimize-contrast;
-        /* Chrome (and eventually Safari) */
-        image-rendering: pixelated;
-        /* Chrome */
-        image-rendering: optimize-contrast;
-        /* CSS3 Proposed                  */
-        -ms-interpolation-mode: nearest-neighbor;
-        /* IE8+                           */ } }
+  .main--slider .bx-prev, .main--slider .bx-next {
+    image-rendering: optimizeSpeed;
+    /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;
+    /* Firefox                        */
+    image-rendering: -o-crisp-edges;
+    /* Opera                          */
+    image-rendering: -webkit-optimize-contrast;
+    /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;
+    /* Chrome */
+    image-rendering: optimize-contrast;
+    /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE8+                           */ }
   .main--slider .bx-prev {
     background: url("../img/arrow-left.png");
     left: -60px; }
