@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3 col-xs-6">
-                <a href="/" class="logo">
+                <a href="#main" class="logo" id="logo">
                     <img src="img/logo.png" class="logo--img logo--img_xs">
                     <img src="img/logo_desk.png" class="logo--img">
                 </a>
@@ -441,17 +441,14 @@
         $('#main-anchor').click(function (e) {
             scrollTo(e,$('#items'));
         });
-        $('#feedback-link').click(function (e) {
+        $('#feedback-link,#link-items').click(function (e) {
             scrollTo(e,$('#feedback'));
         });
-        $('#link-main').click(function (e) {
+        $('#link-main, #logo').click(function (e) {
             scrollTo(e,$('#main'));
         });
         $('#link-about').click(function (e) {
             scrollTo(e,$('#about'));
-        });
-        $('#link-items').click(function (e) {
-            scrollTo(e,$('#items'));
         });
         $('#link-slider').click(function (e) {
             scrollTo(e,$('#slider'));
