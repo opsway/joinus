@@ -369,7 +369,7 @@ body {
     margin-right: -5px; }
   @media (max-width: 1440px) {
     .main-textbox.two, .two.main-textbox_mobile {
-      top: 180px; } }
+      top: 200px; } }
 
 .main-textbox.three, .three.main-textbox_mobile {
   bottom: 70px;
@@ -409,7 +409,7 @@ body {
     transform: rotate(45deg);
     margin-top: 20px;
     margin-left: -5px; }
-  @media (max-width: 1370px) {
+  @media (max-width: 1440px) {
     .main-textbox.five, .five.main-textbox_mobile {
       left: -260px; } }
 
