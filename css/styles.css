@@ -288,7 +288,8 @@ body {
   background-size: 100%;
   position: relative;
   width: 350px;
-  height: 422px; }
+  height: 422px;
+  margin-top: 70px; }
   @media (max-width: 1370px) {
     .main--image {
       width: 300px;
