@@ -74,6 +74,9 @@ body {
 .mb-80 {
   margin-bottom: 80px; }
 
+.mb-30 {
+  margin-bottom: 30px; }
+
 .color-main {
   color: #22b14d; }
 
@@ -806,6 +809,36 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   z-index: 10001;
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.modal--wrap {
+  width: 590px;
+  height: 410px;
+  background: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+
+.modal--heading {
+  font-size: 30px;
+  font-weight: 100;
+  color: #000000; }
+
+.modal--text {
+  font-size: 16px;
+  color: #555555; }
+
+.modal--icon {
+  width: 140px;
+  height: 95px;
+  display: inline-block;
+  background: url("../img/modal-icon.png") no-repeat center; }
+
+.modal--button {
+  width: 210px; }
 
 /*# sourceMappingURL=styles.css.map */
