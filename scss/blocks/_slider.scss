@@ -9,6 +9,7 @@
 }
 
 .slider {
+  position:relative; z-index:1;
   .bx-wrapper .bx-viewport {
     box-shadow: none;
   }

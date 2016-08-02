@@ -57,7 +57,8 @@ body {
   border: none; }
   .button-main:hover, .button-main:focus {
     text-decoration: none;
-    color: #ffffff; }
+    color: #ffffff;
+    background: #1a9840; }
 
 .mt-15 {
   margin-top: 15px; }
@@ -641,22 +642,25 @@ body {
     .slider--wrap {
       padding: 45px 0; } }
 
-.slider .bx-wrapper .bx-viewport {
-  box-shadow: none; }
-.slider .bx-wrapper .bx-controls-direction a {
-  width: 40px;
-  height: 41px;
-  background-position: left top; }
-.slider .bx-prev {
-  background: url("../img/arrow-left.png");
-  left: -130px; }
-  .slider .bx-prev:hover, .slider .bx-prev:focus {
-    background-position: left top !important; }
-.slider .bx-next {
-  background: url("../img/arrow-right.png");
-  right: -130px; }
-  .slider .bx-next:hover, .slider .bx-next:focus {
-    background-position: left top !important; }
+.slider {
+  position: relative;
+  z-index: 1; }
+  .slider .bx-wrapper .bx-viewport {
+    box-shadow: none; }
+  .slider .bx-wrapper .bx-controls-direction a {
+    width: 40px;
+    height: 41px;
+    background-position: left top; }
+  .slider .bx-prev {
+    background: url("../img/arrow-left.png");
+    left: -130px; }
+    .slider .bx-prev:hover, .slider .bx-prev:focus {
+      background-position: left top !important; }
+  .slider .bx-next {
+    background: url("../img/arrow-right.png");
+    right: -130px; }
+    .slider .bx-next:hover, .slider .bx-next:focus {
+      background-position: left top !important; }
 
 .slider {
   padding: 0 150px; }
