@@ -647,14 +647,16 @@ body {
   width: 40px;
   height: 41px;
   background-position: left top; }
-  .slider .bx-wrapper .bx-controls-direction a:hover, .slider .bx-wrapper .bx-controls-direction a:focus {
-    background-position: left top; }
 .slider .bx-prev {
   background: url("../img/arrow-left.png");
   left: -130px; }
+  .slider .bx-prev:hover, .slider .bx-prev:focus {
+    background-position: left top !important; }
 .slider .bx-next {
   background: url("../img/arrow-right.png");
   right: -130px; }
+  .slider .bx-next:hover, .slider .bx-next:focus {
+    background-position: left top !important; }
 
 .slider {
   padding: 0 150px; }

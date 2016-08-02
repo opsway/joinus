@@ -16,17 +16,20 @@
     width: 40px;
     height: 41px;
     background-position: left top;
-    &:hover, &:focus {
-      background-position: left top;
-    }
   }
   .bx-prev {
     background: url("../img/arrow-left.png");
     left: -130px;
+    &:hover, &:focus {
+      background-position: left top !important;
+    }
   }
   .bx-next {
     background: url("../img/arrow-right.png");
     right: -130px;
+    &:hover, &:focus {
+      background-position: left top !important;
+    }
   }
 }
 
