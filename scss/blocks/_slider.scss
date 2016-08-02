@@ -79,6 +79,9 @@
   .bx-wrapper .bx-controls-direction a {
     width: 40px;
     height: 41px;
+    &:hover, &:focus {
+      background-position: left top !important;
+    }
   }
   .bx-prev {
     background: url("../img/arrow-left.png");
