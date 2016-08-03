@@ -572,7 +572,7 @@
             e.preventDefault();
             $('html, body').animate({
                 scrollTop: target.offset().top
-            },1000);
+            },500);
         }
         if($(window).width() > 767) {
             $(window).scroll(function () {
@@ -581,12 +581,12 @@
                 if(offsetIconsTop <= 400){
                     $('#icon1,#icon2,#icon3').animate({
                         opacity: 1
-                    },1000);
+                    },500);
                 }
                 if(offsetIconsBottom <= 600){
                     $('#icon4,#icon5,#icon6').animate({
                         opacity: 1
-                    },1000);
+                    },500);
                 }
             });
         }
@@ -598,7 +598,7 @@
                     if(offsetIcon <= 500) {
                         $(ids[i]).animate({
                             opacity: 1
-                        },1000);
+                        },500);
                     }
                 }
             });
