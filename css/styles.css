@@ -775,7 +775,8 @@ body {
   line-height: 1.5;
   text-align: center;
   font-weight: 100; }
-.feedback--override-wrap #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+.feedback--override-wrap #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error,
+.feedback--override-wrap #mc_embed_signup #mc-embedded-subscribe-form textarea.mce_inline_error {
   border: 1px solid #f05268;
   background: #e9eef2;
   color: #212121; }

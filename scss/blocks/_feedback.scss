@@ -22,7 +22,8 @@
     text-align: center;
     font-weight: 100;
   }
-  #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+  #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error,
+  #mc_embed_signup #mc-embedded-subscribe-form textarea.mce_inline_error {
     border: 1px solid #f05268;
     background: #e9eef2;
     color: #212121;
