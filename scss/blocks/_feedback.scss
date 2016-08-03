@@ -28,9 +28,9 @@
     color: #212121;
   }
   .feedback--textarea-wrap {
-    #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+     div.mce_inline_error {
       left: auto;
-      right: 0;
+      right: 0 !important;
     }
   }
 }
