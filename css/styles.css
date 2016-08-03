@@ -757,11 +757,24 @@ body {
       font-size: 14px;
       font-weight: bold; } }
 
-#mc_embed_signup, #mc_embed_signup form {
+.feedback--override-wrap #mc_embed_signup, .feedback--override-wrap #mc_embed_signup form {
   all: initial; }
-
-#mc_embed_signup .mc-field-group {
+.feedback--override-wrap #mc_embed_signup .mc-field-group {
   padding: 0 !important; }
+.feedback--override-wrap #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+  position: absolute;
+  right: -300px;
+  top: 0;
+  width: 220px;
+  border-radius: 0;
+  background: #f05268;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  padding: 25px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 100; }
 
 .feedback {
   background: #2d3743;
@@ -794,13 +807,16 @@ body {
   line-height: 55px;
   background: transparent;
   border: 1px solid #ffffff !important;
-  color: #ffffff;
+  color: #212121;
   width: 100%;
   margin-bottom: 15px;
   padding: 0 10px !important;
-  border-radius: 0 !important;
+  border-radius: 2px !important;
   font-family: 'Open Sans', sans-serif !important;
-  font-weight: 100; }
+  font-weight: 100;
+  outline: none; }
+  .feedback--input:focus, .feedback--textarea:focus {
+    background: #e9eef2; }
   @media (max-width: 767px) {
     .feedback--input, .feedback--textarea {
       height: 35px;
