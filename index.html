@@ -407,13 +407,15 @@
                             <div class="response" id="mce-error-response" style="display:none"></div>
                             <div class="response" id="mce-success-response" style="display:none"></div>
                         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1896832c0d632ef2ae9f267af_67512a61b4" tabindex="-1" value=""></div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_1896832c0d632ef2ae9f267af_67512a61b4" tabindex="-1" value="">
+                        </div>
                         <div class="clear">
                             <input type="submit"
                                    value="Send"
                                    name="subscribe"
-                                   id="mc-embedded-subscribe" c
-                                   lass="button-main feedback--button"
+                                   id="mc-embedded-subscribe"
+                                   class="button-main feedback--button"
                             >
                         </div>
                     </div>
@@ -447,7 +449,7 @@
         <!--End mc_embed_signup-->
     </div>
 </div>
-<div class="overlay" style="display: none;">
+<div class="overlay" id="overlay" style="display: none;">
     <div class="modal--wrap">
         <h3 class="modal--heading">Thank you, $Имя</h3>
         <p class="modal--text">we'll contact you soon to discuss details</p>
@@ -456,7 +458,7 @@
         </div>
 
         <div>
-            <button class="button-main modal--button">ok</button>
+            <button class="button-main modal--button" id="modal-button">ok</button>
         </div>
 
     </div>
@@ -567,6 +569,19 @@
                 }
             });
         }
+
+        $('#mc-embedded-subscribe').click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('#overlay').show();
+            $('body').addClass('no-scroll');
+        });
+        $('#modal-button').click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('#overlay').hide();
+            $('body').removeClass('no-scroll');
+        });
 
     });
 </script>
