@@ -22,6 +22,11 @@
     text-align: center;
     font-weight: 100;
   }
+  #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+    border: 1px solid #f05268;
+    background: #e9eef2;
+    color: #212121;
+  }
 }
 
 .feedback {
@@ -57,8 +62,8 @@
   height: 55px;
   line-height: 55px;
   background: transparent;
-  border: 1px solid #ffffff !important;
-  color: #212121;
+  border: 1px solid #ffffff;
+  color: #ffffff;
   width: 100%;
   margin-bottom: 15px;
   padding: 0 10px !important;
@@ -68,6 +73,7 @@
   outline: none;
   &:focus {
     background: #e9eef2;
+    color: #212121;
   }
   @media (max-width: 767px) {
     height: 35px;

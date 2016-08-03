@@ -775,6 +775,10 @@ body {
   line-height: 1.5;
   text-align: center;
   font-weight: 100; }
+.feedback--override-wrap #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+  border: 1px solid #f05268;
+  background: #e9eef2;
+  color: #212121; }
 
 .feedback {
   background: #2d3743;
@@ -806,8 +810,8 @@ body {
   height: 55px;
   line-height: 55px;
   background: transparent;
-  border: 1px solid #ffffff !important;
-  color: #212121;
+  border: 1px solid #ffffff;
+  color: #ffffff;
   width: 100%;
   margin-bottom: 15px;
   padding: 0 10px !important;
@@ -816,7 +820,8 @@ body {
   font-weight: 100;
   outline: none; }
   .feedback--input:focus, .feedback--textarea:focus {
-    background: #e9eef2; }
+    background: #e9eef2;
+    color: #212121; }
   @media (max-width: 767px) {
     .feedback--input, .feedback--textarea {
       height: 35px;
