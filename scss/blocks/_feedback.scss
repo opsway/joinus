@@ -34,6 +34,18 @@
       right: 0 !important;
     }
   }
+  .feedback--input.valid {
+    border-color: #43cea2 !important;
+    background: #e9eef2;
+    color: #212121;
+  }
+  #mc_embed_signup #mce-success-response{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+  }
 }
 
 .feedback {

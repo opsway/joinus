@@ -783,6 +783,16 @@ body {
 .feedback--override-wrap .feedback--textarea-wrap div.mce_inline_error {
   left: auto;
   right: 0 !important; }
+.feedback--override-wrap .feedback--input.valid, .feedback--override-wrap .valid.feedback--textarea {
+  border-color: #43cea2 !important;
+  background: #e9eef2;
+  color: #212121; }
+.feedback--override-wrap #mc_embed_signup #mce-success-response {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  font-weight: 100; }
 
 .feedback {
   background: #2d3743;
