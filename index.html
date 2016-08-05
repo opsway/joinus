@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href=favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>OpsWay</title>
 </head>
@@ -381,7 +381,7 @@
                 </div>
                 <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0">
                     <div class="validation-wrap" id="-form-question">
-                        <textarea name="question" class="feedback--textarea" placeholder="Ask your questions here"></textarea>
+                        <textarea name="feedback" class="feedback--textarea" placeholder="Ask your questions here"></textarea>
                         <div class="error-message_textarea">
                             Please enter your question
                         </div>
@@ -579,7 +579,7 @@
                 $('#-form-name').addClass('error');
                 isValid = false;
             }
-            if(form.question.value == "")  {
+            if(form.feedback.value == "")  {
                 $('#-form-question').addClass('error');
                 isValid = false;
             }
