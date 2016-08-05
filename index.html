@@ -359,13 +359,28 @@
         <form class="feedback--form -feedback-form">
             <div class="row">
                 <div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-0">
-                    <input type="text" name="name" class="feedback--input" placeholder="Your name">
+                    <div class="validation-wrap" id="-form-name">
+                        <input type="text" name="name" class="feedback--input" placeholder="Your name">
+                        <div class="error-message">
+                            Please enter your name
+                        </div>
+                    </div>
                     <input type="text" name="phone" class="feedback--input" placeholder="Your phone number">
-                    <input type="email" name="email" class="feedback--input" placeholder="Your email address">
+                    <div class="validation-wrap" id="-form-email">
+                        <input type="text" name="email" class="feedback--input" placeholder="Your email address">
+                        <div class="error-message">
+                            Please enter valid email address
+                        </div>
+                    </div>
                     <input type="text" name="company" class="feedback--input" placeholder="Your company name">
                 </div>
                 <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0">
-                    <textarea name="feedback" class="feedback--textarea" placeholder="Ask your questions here"></textarea>
+                    <div class="validation-wrap" id="-form-question">
+                        <textarea name="question" class="feedback--textarea" placeholder="Ask your questions here"></textarea>
+                        <div class="error-message_textarea">
+                            Please enter your question
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="text-center">
@@ -383,7 +398,7 @@
         </div>
 
         <div>
-            <button class="button-main modal--button" id="modal-button">ok</button>
+            <button class="button-main modal--button" id="-modal-button">ok</button>
         </div>
 
     </div>
@@ -522,6 +537,9 @@
         $('.-feedback-form').submit(function (e) {
             e.stopPropagation();
             e.preventDefault();
+            var valid = validate(this);
+            console.log(valid);
+            if(valid) {console.log('form is valid');
     			document.domain = "opsway.com";
         		var formData = $(this).serialize(),
         		url = "http://opsway.com/joinus/mail.php";
@@ -533,11 +551,53 @@
 			    data: formData,
 			    success: function(response){
 					console.log(response);
+                    $('#overlay').show();
+                    $('body').addClass('no-scroll');
 				},
 				error:function(err) {
 					console.log(err);
 				}
-				});
+				});}
+        });
+        function validate(form){
+            var isValid = true;
+            if($('#-form-name').hasClass('error')){
+                $('#-form-name').removeClass('error');
+            }
+            if($('#-form-question').hasClass('error')){
+                $('#-form-question').removeClass('error');
+            }
+            if($('#-form-email').hasClass('error')){
+                $('#-form-email').removeClass('error');
+            }
+            if(form.name.value == "")  {
+                $('#-form-name').addClass('error');
+                isValid = false;
+            }
+            if(form.question.value == "")  {
+                $('#-form-question').addClass('error');
+                isValid = false;
+            }
+            if(form.email.value == "")  {
+                $('#-form-email').addClass('error');
+                isValid = false;
+            }
+            else if(form.email.value != "") {
+                var email = form.email.value;
+                var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                var emailTest = emailReg.test(email);
+                if(!emailTest) {
+                    $('#-form-email').addClass('error');
+                    isValid = false;
+                }
+            }
+            return isValid;
+        }
+        $('#-modal-button').click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('#overlay').hide();
+            $('body').removeClass('no-scroll');
         });
         function scrollTo(e,target){
             e.stopPropagation();
@@ -575,19 +635,6 @@
                 }
             });
         }
-
-        /*$('#mc-embedded-subscribe').click(function (e) {
-            e.stopPropagation();
-            e.preventDefault();
-            $('#overlay').show();
-            $('body').addClass('no-scroll');
-        });
-        $('#modal-button').click(function (e) {
-            e.stopPropagation();
-            e.preventDefault();
-            $('#overlay').hide();
-            $('body').removeClass('no-scroll');
-        });*/
 
     });
 </script>

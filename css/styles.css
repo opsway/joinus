@@ -794,6 +794,38 @@ body {
   width: 100%;
   font-weight: 100; }
 
+.validation-wrap {
+  position: relative; }
+
+.error {
+  position: relative; }
+  .error .error-message, .error .error-message_textarea {
+    display: block; }
+  .error .feedback--input, .error .feedback--textarea {
+    border: 1px solid #f05268;
+    background: #e9eef2;
+    color: #212121; }
+
+.error-message, .error-message_textarea {
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  width: 220px;
+  border-radius: 0;
+  background: #f05268;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  padding: 25px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 100;
+  display: none;
+  z-index: 1; }
+
+.error-message_textarea {
+  right: 0; }
+
 .feedback {
   background: #2d3743;
   color: #ffffff;
