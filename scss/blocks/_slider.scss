@@ -9,25 +9,27 @@
 }
 
 .slider {
+  position:relative; z-index:1;
   .bx-wrapper .bx-viewport {
     box-shadow: none;
   }
   .bx-wrapper .bx-controls-direction a {
     width: 40px;
     height: 41px;
+    background-position: left top;
   }
   .bx-prev {
     background: url("../img/arrow-left.png");
     left: -130px;
-    &:hover {
-      background-position: left top;
+    &:hover, &:focus {
+      background-position: left top !important;
     }
   }
   .bx-next {
     background: url("../img/arrow-right.png");
     right: -130px;
-    &:hover {
-      background-position: left top;
+    &:hover, &:focus {
+      background-position: left top !important;
     }
   }
 }
@@ -78,14 +80,32 @@
   .bx-wrapper .bx-controls-direction a {
     width: 40px;
     height: 41px;
+    &:hover, &:focus {
+      background-position: left top !important;
+    }
+  }
+  .bx-prev,.bx-next {
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
   }
   .bx-prev {
     background: url("../img/arrow-left.png");
     left: -60px;
+    &:hover, &:focus {
+      background-position: left top !important;
+    }
   }
   .bx-next {
     background: url("../img/arrow-right.png");
     right: -50px;
+    &:hover, &:focus {
+      background-position: left top !important;
+    }
   }
 }
 

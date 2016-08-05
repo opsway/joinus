@@ -1,18 +1,20 @@
 @import "vars";
 
 .button-main {
-  border-radius: 25px;
+  border-radius: 25px !important;
   padding: 0px 30px;
-  display: inline-block;
+  display: inline-block !important;
   text-transform: uppercase;
   font-weight: 100;
   color: #ffffff;
   height: 40px;
   line-height: 40px;
-  background: $color-main;
-  border: none;
+  background: #22b14d;
+  border: none !important;
+  font-family: 'Open Sans', sans-serif;
   &:hover, &:focus {
     text-decoration: none;
     color: #ffffff;
+    background: #1a9840;
   }
 }

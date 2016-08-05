@@ -9,10 +9,15 @@
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
     <script src="bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href=favicon-16x16.png">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>OpsWay</title>
 </head>
@@ -369,7 +374,7 @@
         </form>
     </div>
 </div>
-<div class="overlay" style="display: none;">
+<div class="overlay" id="overlay" style="display: none;">
     <div class="modal--wrap">
         <h3 class="modal--heading">Thank you, $Имя</h3>
         <p class="modal--text">we'll contact you soon to discuss details</p>
@@ -378,7 +383,7 @@
         </div>
 
         <div>
-            <button class="button-main modal--button">ok</button>
+            <button class="button-main modal--button" id="modal-button">ok</button>
         </div>
 
     </div>
@@ -430,6 +435,15 @@
         </div>
     </div>
 </div>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKKJL6"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WKKJL6');</script>
+<!-- End Google Tag Manager -->
 <script>
     $(document).ready(function(){
         $('.bxslider').bxSlider({
@@ -466,10 +480,10 @@
 			    url: url,
 			    data: formData,
 			    success: function(response){
-					console.log(response);				
+					console.log(response);
 				},
 				error:function(err) {
-					console.log(err);		
+					console.log(err);
 				}
 				});
         });
@@ -478,7 +492,7 @@
             e.preventDefault();
             $('html, body').animate({
                 scrollTop: target.offset().top
-            },1000);
+            },500);
         }
         if($(window).width() > 767) {
             $(window).scroll(function () {
@@ -487,12 +501,12 @@
                 if(offsetIconsTop <= 400){
                     $('#icon1,#icon2,#icon3').animate({
                         opacity: 1
-                    },1000);
+                    },500);
                 }
                 if(offsetIconsBottom <= 600){
                     $('#icon4,#icon5,#icon6').animate({
                         opacity: 1
-                    },1000);
+                    },500);
                 }
             });
         }
@@ -504,12 +518,25 @@
                     if(offsetIcon <= 500) {
                         $(ids[i]).animate({
                             opacity: 1
-                        },1000);
+                        },500);
                     }
                 }
             });
         }
-		  
+
+        /*$('#mc-embedded-subscribe').click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('#overlay').show();
+            $('body').addClass('no-scroll');
+        });
+        $('#modal-button').click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('#overlay').hide();
+            $('body').removeClass('no-scroll');
+        });*/
+
     });
 </script>
 </body>
