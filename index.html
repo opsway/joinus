@@ -544,7 +544,7 @@
             e.preventDefault();
             var valid = validate(this);
             if(valid) {
-                $('#-user-name').innerHTML = $(this).name.value;
+                $('#-user-name').innerHTML = this.name.value;
     			document.domain = "opsway.com";
         		var formData = $(this).serialize(),
         		url = "http://opsway.com/joinus/mail.php";
