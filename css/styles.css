@@ -890,9 +890,6 @@ body {
   @media (max-width: 1023px) {
     .feedback--button {
       margin: 20px 0 0 !important; } }
-  @media (max-width: 767px) {
-    .feedback--button {
-      margin: 0 !important; } }
 
 .no-scroll {
   overflow: hidden; }
