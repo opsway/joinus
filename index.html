@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href=favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>OpsWay</title>
 </head>
@@ -351,16 +351,16 @@
     <div class="container">
         <div class="heading">Contact us</div>
         <p class="text-center feedback--text">Please provide us your contact details and we’ll get back to you asap to discuss our partnership!</p>
-        <form class="feedback--form">
+        <form class="feedback--form -feedback-form">
             <div class="row">
                 <div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-0">
-                    <input type="text" class="feedback--input" placeholder="Your name">
-                    <input type="text" class="feedback--input" placeholder="Your phone number">
-                    <input type="text" class="feedback--input" placeholder="Your email address">
-                    <input type="text" class="feedback--input" placeholder="Your company name">
+                    <input type="text" name="name" class="feedback--input" placeholder="Your name">
+                    <input type="text" name="phone" class="feedback--input" placeholder="Your phone number">
+                    <input type="email" name="email" class="feedback--input" placeholder="Your email address">
+                    <input type="text" name="company" class="feedback--input" placeholder="Your company name">
                 </div>
                 <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0">
-                    <textarea class="feedback--textarea" placeholder="Ask your questions here"></textarea>
+                    <textarea name="feedback" class="feedback--textarea" placeholder="Ask your questions here"></textarea>
                 </div>
             </div>
             <div class="text-center">
@@ -453,6 +453,26 @@
         $('#link-slider').click(function (e) {
             scrollTo(e,$('#slider'));
         });
+        $('.-feedback-form').submit(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+    			document.domain = "opsway.com";
+        		var formData = $(this).serialize(),
+        		url = "http://opsway.tmp/joinus/mail.php";
+        		$.ajax({
+			    type: "POST",
+ 			    dataType: "json",
+			    cache: false,
+			    url: url,
+			    data: formData,
+			    success: function(response){
+					console.log(response);				
+				},
+				error:function(err) {
+					console.log(err);		
+				}
+				});
+        });
         function scrollTo(e,target){
             e.stopPropagation();
             e.preventDefault();
@@ -489,7 +509,7 @@
                 }
             });
         }
-
+		  
     });
 </script>
 </body>
