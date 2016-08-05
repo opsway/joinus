@@ -48,6 +48,45 @@
   }
 }
 
+.validation-wrap {
+  position: relative;
+}
+
+.error {
+  position: relative;
+  .error-message {
+    display: block;
+  }
+  .feedback--input {
+    border: 1px solid #f05268;
+    background: #e9eef2;
+    color: #212121;
+  }
+}
+
+.error-message {
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  width: 220px;
+  border-radius: 0;
+  background: #f05268;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  padding: 25px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 100;
+  display: none;
+  z-index: 1;
+}
+
+.error-message_textarea {
+  @extend .error-message;
+  right: 0;
+}
+
 .feedback {
   background: #2d3743;
   color: #ffffff;
@@ -84,7 +123,6 @@
   border: 1px solid #ffffff;
   color: #ffffff;
   width: 100%;
-  margin-bottom: 15px;
   padding: 0 10px !important;
   border-radius: 2px !important;
   font-family: 'Open Sans', sans-serif !important;
@@ -105,6 +143,7 @@
   line-height: 1.5;
   height: 265px;
   padding: 15px 10px !important;
+  display: block;
   @media (max-width: 767px) {
     height: 140px;
   }
