@@ -543,8 +543,7 @@
             e.stopPropagation();
             e.preventDefault();
             var valid = validate(this);
-            console.log(valid);
-            if(valid) {console.log('form is valid');
+            if(valid) {
     			document.domain = "opsway.com";
         		var formData = $(this).serialize(),
         		url = "http://opsway.com/joinus/mail.php";
