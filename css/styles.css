@@ -79,6 +79,9 @@ body {
 .mb-30 {
   margin-bottom: 30px; }
 
+.mb-15 {
+  margin-bottom: 15px; }
+
 .color-main {
   color: #22b14d; }
 
@@ -859,7 +862,6 @@ body {
   border: 1px solid #ffffff;
   color: #ffffff;
   width: 100%;
-  margin-bottom: 15px;
   padding: 0 10px !important;
   border-radius: 2px !important;
   font-family: 'Open Sans', sans-serif !important;
@@ -876,7 +878,8 @@ body {
 .feedback--textarea {
   line-height: 1.5;
   height: 265px;
-  padding: 15px 10px !important; }
+  padding: 15px 10px !important;
+  display: block; }
   @media (max-width: 767px) {
     .feedback--textarea {
       height: 140px; } }
