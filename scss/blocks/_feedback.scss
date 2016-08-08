@@ -1,5 +1,5 @@
 .feedback--override-wrap { // override mailchimp embed form styles
-  #mc_embed_signup,#mc_embed_signup form {
+  #mc_embed_signup, #mc_embed_signup form {
     all: initial;
   }
   #mc_embed_signup .mc-field-group {
@@ -29,7 +29,7 @@
     color: #212121;
   }
   .feedback--textarea-wrap {
-     div.mce_inline_error {
+    div.mce_inline_error {
       left: auto;
       right: 0 !important;
     }
@@ -39,7 +39,7 @@
     background: #e9eef2;
     color: #212121;
   }
-  #mc_embed_signup #mce-success-response{
+  #mc_embed_signup #mce-success-response {
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     text-align: center;
@@ -52,15 +52,12 @@
   position: relative;
 }
 
-.error {
-  position: relative;
-  .error-message {
+.error.feedback--input {
+  border: 1px solid #f05268;
+  background: #e9eef2;
+  color: #212121;
+~ .error-message {
     display: block;
-  }
-  .feedback--input {
-    border: 1px solid #f05268;
-    background: #e9eef2;
-    color: #212121;
   }
 }
 

@@ -360,7 +360,7 @@
             <div class="row">
                 <div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-0">
                     <div class="validation-wrap mb-15" id="-form-name">
-                        <input type="text" name="name" class="feedback--input" placeholder="Your name *">
+                        <input type="text" name="name" class="feedback--input -validation-input" placeholder="Your name *">
                         <div class="error-message">
                             Please enter your name
                         </div>
@@ -369,7 +369,7 @@
                         <input type="text" name="phone" class="feedback--input" placeholder="Your phone number">
                     </div>
                     <div class="validation-wrap mb-15" id="-form-email">
-                        <input type="text" name="email" class="feedback--input" placeholder="Your email address *">
+                        <input type="text" name="email" class="feedback--input -validation-input" placeholder="Your email address *">
                         <div class="error-message">
                             Please enter valid email address
                         </div>
@@ -381,7 +381,7 @@
                 </div>
                 <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0">
                     <div class="validation-wrap" id="-form-question">
-                        <textarea name="feedback" class="feedback--textarea" placeholder="Ask your questions here *"></textarea>
+                        <textarea name="feedback" class="feedback--textarea -validation-input" placeholder="Ask your questions here *"></textarea>
                         <div class="error-message_textarea">
                             Please enter your question
                         </div>
@@ -389,7 +389,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <button type="submit" class="button-main feedback--button">send</button>
+                <button type="submit" class="button-main feedback--button" id="-submit-button">send</button>
             </div>
         </form>
     </div>
@@ -556,27 +556,27 @@
                     }
                 });}
         });
+        $('.-validation-input').on('focus', function() {
+            $(this).removeClass('error');
+        });
+        function validateInput(input) {
+
+        }
         function validate(form){
             var isValid = true;
-            if($('#-form-name').hasClass('error')){
-                $('#-form-name').removeClass('error');
-            }
-            if($('#-form-question').hasClass('error')){
-                $('#-form-question').removeClass('error');
-            }
-            if($('#-form-email').hasClass('error')){
-                $('#-form-email').removeClass('error');
+            if($('.-validation-input').hasClass('error')){
+                $('.-validation-input').removeClass('error');
             }
             if(form.name.value == "")  {
-                $('#-form-name').addClass('error');
+                $('#-form-name .-validation-input').addClass('error');
                 isValid = false;
             }
             if(form.feedback.value == "")  {
-                $('#-form-question').addClass('error');
+                $('#-form-question .-validation-input').addClass('error');
                 isValid = false;
             }
             if(form.email.value == "")  {
-                $('#-form-email').addClass('error');
+                $('#-form-email .-validation-input').addClass('error');
                 isValid = false;
             }
             else if(form.email.value != "") {
@@ -584,7 +584,7 @@
                 var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
                 var emailTest = emailReg.test(email);
                 if(!emailTest) {
-                    $('#-form-email').addClass('error');
+                    $('#-form-email .-validation-input').addClass('error');
                     isValid = false;
                 }
             }

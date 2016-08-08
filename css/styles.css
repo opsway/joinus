@@ -800,14 +800,12 @@ body {
 .validation-wrap {
   position: relative; }
 
-.error {
-  position: relative; }
-  .error .error-message, .error .error-message_textarea {
+.error.feedback--input, .error.feedback--textarea {
+  border: 1px solid #f05268;
+  background: #e9eef2;
+  color: #212121; }
+  .error.feedback--input ~ .error-message, .error.feedback--textarea ~ .error-message, .error.feedback--input ~ .error-message_textarea, .error.feedback--textarea ~ .error-message_textarea {
     display: block; }
-  .error .feedback--input, .error .feedback--textarea {
-    border: 1px solid #f05268;
-    background: #e9eef2;
-    color: #212121; }
 
 .error-message, .error-message_textarea {
   position: absolute;
