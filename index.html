@@ -549,6 +549,7 @@
                         console.log(response);
                         $('#overlay').show();
                         $('body').addClass('no-scroll');
+                        this.reset();
                     },
                     error:function(err) {
                         console.log(err);
