@@ -356,7 +356,7 @@
     <div class="container">
         <div class="heading">Contact us</div>
         <p class="text-center feedback--text">Please provide us your contact details and we’ll get back to you asap to discuss our partnership!</p>
-        <form class="feedback--form -feedback-form">
+        <form class="feedback--form" id="-feedback-form">
             <div class="row">
                 <div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-0">
                     <div class="validation-wrap mb-15" id="-form-name">
@@ -529,13 +529,14 @@
 </script>
 <script>
     $(document).ready(function(){
-        $('.-feedback-form').submit(function (e) {
+        $('#-feedback-form').submit(function (e) {
             e.stopPropagation();
             e.preventDefault();
             var valid = validate(this);
             if(valid) {
                 console.log(this.name.value);
                 $('#-user-name').html(this.name.value);
+                $('#-feedback-form').get(0).reset();
                 document.domain = "opsway.com";
                 var formData = $(this).serialize(),
                         url = "http://opsway.com/joinus/mail.php";
@@ -549,7 +550,6 @@
                         console.log(response);
                         $('#overlay').show();
                         $('body').addClass('no-scroll');
-                        $('#-feedback-form').trigger('reset');
                     },
                     error:function(err) {
                         console.log(err);
