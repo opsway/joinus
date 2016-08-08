@@ -536,7 +536,6 @@
             if(valid) {
                 console.log(this.name.value);
                 $('#-user-name').html(this.name.value);
-                $('#-feedback-form').get(0).reset();
                 document.domain = "opsway.com";
                 var formData = $(this).serialize(),
                         url = "http://opsway.com/joinus/mail.php";
@@ -550,6 +549,7 @@
                         console.log(response);
                         $('#overlay').show();
                         $('body').addClass('no-scroll');
+                        $('#-feedback-form').get(0).reset();
                     },
                     error:function(err) {
                         console.log(err);
