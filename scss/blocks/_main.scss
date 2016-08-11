@@ -22,6 +22,7 @@
   width: 350px;
   height: 422px;
   margin-top: 70px;
+  margin-left: 50px;
   @media (max-width: 1370px) {
     width: 300px;
     height: 366px;
@@ -200,7 +201,7 @@ $textboxes: one, two, three, four, five;
 .main--anchor {
   position: absolute;
   left: 50%;
-  margin-left: -34px;
+  margin-left: -10px;
   bottom: 20px;
   width: 20px;
   height: 40px;
@@ -216,15 +217,15 @@ $textboxes: one, two, three, four, five;
     left: 6px;
     top: 6px;
   }
-  @media (max-width: 1680px) {
+/*  @media (max-width: 1680px) {
     margin-left: -50px;
-  }
+  }*/
   @media (max-width: 1440px) {
-    margin-left: -38px;
+    //margin-left: -38px;
     bottom: 12px;
   }
-  @media (max-width: 1370px) {
+/*  @media (max-width: 1370px) {
     margin-left: -34px;
     bottom: 12px;
-  }
+  }*/
 }

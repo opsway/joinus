@@ -294,7 +294,8 @@ body {
   position: relative;
   width: 350px;
   height: 422px;
-  margin-top: 70px; }
+  margin-top: 70px;
+  margin-left: 50px; }
   @media (max-width: 1370px) {
     .main--image {
       width: 300px;
@@ -422,12 +423,19 @@ body {
 .main--anchor {
   position: absolute;
   left: 50%;
-  margin-left: -34px;
+  margin-left: -10px;
   bottom: 20px;
   width: 20px;
   height: 40px;
   border: 2px solid #ffffff;
-  border-radius: 10px; }
+  border-radius: 10px;
+  /*  @media (max-width: 1680px) {
+      margin-left: -50px;
+    }*/
+  /*  @media (max-width: 1370px) {
+      margin-left: -34px;
+      bottom: 12px;
+    }*/ }
   .main--anchor:before {
     position: absolute;
     width: 4px;
@@ -437,16 +445,8 @@ body {
     content: " ";
     left: 6px;
     top: 6px; }
-  @media (max-width: 1680px) {
-    .main--anchor {
-      margin-left: -50px; } }
   @media (max-width: 1440px) {
     .main--anchor {
-      margin-left: -38px;
-      bottom: 12px; } }
-  @media (max-width: 1370px) {
-    .main--anchor {
-      margin-left: -34px;
       bottom: 12px; } }
 
 .item {
